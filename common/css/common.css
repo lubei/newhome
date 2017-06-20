@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*全局样式*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, span, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td, section, nav, header, footer{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;text-align:inherit;line-height:inherit;}
+html{ width:100%; }
+::-webkit-scrollbar{ width:0;}
+body{ color:#666; line-height:1.4em; position:relative; -webkit-transition:opacity 0.5s; -moz-transition:opacity 0.5s; -ms-transition:opacity 0.5s; -o-transition:opacity 0.5s; transition:opacity 0.5s; height:100%;}
+strong{ font-weight:bold;}
+a{ text-decoration:none; text-transform:none; color:#000;}
+a img{ border:0;}
+a:hover{ }
+a span{ cursor:pointer;}
+em{ text-transform:none; color:#000; font-weight:bold; font-style:normal;}
+.clear{ width:0; height:0; display:block; clear:both; overflow:hidden;}
+.noFloat::after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; overflow:hidden;}
+textarea{ resize:none;}
+input,textarea,button,select{ -webkit-appearance:none;}
+input:focus,textarea:focus,select:focus{ outline:none;}
+ul, ol, dl{ list-style:none; display:block;}
+dd, dt, li{ display:block;}
+
+.icon {
+    width: 1rem; height: 1rem;
+    fill: currentColor;
+    vertical-align: -0.15rem;
+    overflow: hidden;
+}
