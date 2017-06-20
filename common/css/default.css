@@ -1,0 +1,44 @@
+body{
+    color: #313131;
+}
+a{
+    color: #313131;
+}
+#header{
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+.navigation{
+    overflow: hidden;
+}
+.navigation li.current a{
+    color: #0090d3;
+}
+.logo{
+    float: left;
+}
+.search{
+    float: right;
+    width: 5px;
+    height: 5px;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+}
+.banner > img{
+    width: 100%;
+}
+.banner > label{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -15px;
+    width:200px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}

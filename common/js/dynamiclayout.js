@@ -12,15 +12,13 @@ function dynamicLayout(){
   var browserWidth = getBrowserWidth();
   if (browserWidth < 750){
       changeLayout("narrow");
-  }else{
-    changeLayout("wide");
   }
-  // if ((browserWidth >= 750) && (browserWidth <= 950)){
-  //     changeLayout("wide");
-  // }
-  // if (browserWidth > 950){
-  //     changeLayout("wider");
-  // }
+  if ((browserWidth >= 750) && (browserWidth <= 950)){
+      changeLayout("wide");
+  }
+  if (browserWidth > 950){
+      changeLayout("wider");
+  }
 }
 
 function changeLayout(description){

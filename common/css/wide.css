@@ -3,14 +3,15 @@
 	font-size: 16px;
 }
 #header{
-	max-width: 1100px;
 	margin: 0 auto;
+	padding: 28px 50px 15px 50px;
 	font-size: 18px;
 }
 .navigation{
-	overflow: hidden;
+	float: left;
 }
 .navigation li{
 	float: left;
-	padding: 5%;
+	padding: 0 20px;
+	line-height: 80px;
 }
