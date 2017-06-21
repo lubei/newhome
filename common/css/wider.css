@@ -18,3 +18,15 @@
 .logo{
 	margin-right: 40px;
 }
+.secnav{
+	overflow: hidden;
+	padding: 0 50px;
+	background-color: #ececec;
+}
+.secnav > li{
+	float: left;
+}
+.secnav > li a{
+	line-height: 80px;
+	padding: 0 36px;
+}
