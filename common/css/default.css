@@ -4,6 +4,11 @@ body{
 a{
     color: #313131;
 }
+
+.pd-1{
+    padding: 28px 86px;
+}
+
 #header{
     overflow: hidden;
     width: 100%;
@@ -41,4 +46,54 @@ a{
     text-align: center;
     color: #fff;
     font-size: 30px;
+}
+
+.secondaryContent{
+
+}
+.secondaryContent h1{
+    text-align: center;
+    font-size: 28px;
+    line-height: 115px;
+}
+.secondaryContent p{
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.secondaryContent h2{
+    font-size: 24px;
+    margin-bottom: 28px;
+}
+.secondaryContent h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.secondaryContent .missions{
+    display: table;
+    width: 100%;
+    color: #fff;
+    background-color: #6f7b8b;
+}
+.secondaryContent .missions .left, .secondaryContent .missions .right{
+    display: table-cell;
+    width:  50%;
+}
+.secondaryContent .missions .left{
+    vertical-align: middle;
+}
+.secondaryContent .characters{
+    background-color: #eee;
+}
+.secondaryContent .characters ul{
+    overflow: hidden;
+}
+.secondaryContent .characters ul > li{
+    float: left;
+    text-align: center;
+    height: 260px;
+}
+
+#footer{
+    background-color: #eeeeee;
 }
