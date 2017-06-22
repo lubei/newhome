@@ -6,9 +6,10 @@ a{
 }
 
 .pd-1{
-    padding: 28px 7%;
+    padding: 28px 8%;
 }
 
+/*header*/
 #header{
     overflow: hidden;
     width: 100%;
@@ -48,26 +49,50 @@ a{
     font-size: 30px;
 }
 
+/*关于甫崎*/
+.secnav{
+    color: #000;
+    background-color: #ececec;
+}
+.secnav a{
+    color: #000;
+}
+.secnav{
+    overflow: hidden;
+    padding: 0 5%;
+}
+.secnav > li{
+    float: left;
+    padding: 0 3%;
+}
+.secnav > li a{
+    display: inline-block;
+    line-height: 80px;
+}
+.secnav > li.current a{
+    color: #0090d3;
+    border-bottom: 3px solid #0090d3;
+    font-weight: 700;
+}
+
+
 .secondaryContent{
 
 }
 .secondaryContent h1{
     text-align: center;
-    font-size: 28px;
-    line-height: 115px;
+    color: #1b1b1b;
 }
 .secondaryContent p{
     line-height: 28px;
-    margin-bottom: 30px;
 }
 .secondaryContent h2{
     font-size: 24px;
     margin-bottom: 28px;
 }
 .secondaryContent h3{
-    font-size: 24px;
+    color: #1b1b1b;
     font-weight: 700;
-    line-height: 50px;
 }
 .secondaryContent .missions{
     display: table;
@@ -91,9 +116,38 @@ a{
 .secondaryContent .characters ul > li{
     float: left;
     text-align: center;
-    height: 260px;
+}
+.secondaryContent .characters p{
+    color: #707070;
 }
 
+/*footer*/
 #footer{
     background-color: #eeeeee;
+}
+.hotline .phonebox{
+    text-align: center;
+}
+.hotline .phonebox > h1{
+    font-size: 28px;
+}
+.hotline .phonebox > p{
+    font-size: 22px;
+    line-height: 40px;
+}
+.copyright{
+    text-align: right;
+}
+.copyright > ul{
+    text-align: right;
+    line-height: 40px;
+}
+.copyright li{
+    display: inline;
+    color: #1b1b1b;
+    padding-left: 30px;
+}
+.copyright > p{
+    font-size: 14px;
+    color: #7d7d7d;
 }

@@ -4,7 +4,7 @@
 }
 #header{
 	margin: 0 auto;
-	padding: 28px 50px 15px 50px;
+	padding: 28px 5% 15px 5%;
 	font-size: 18px;
 }
 .navigation{
@@ -18,31 +18,23 @@
 .logo{
 	margin-right: 40px;
 }
-.secnav{
-	overflow: hidden;
-	padding: 0 50px;
-	background-color: #ececec;
-}
-.secnav > li{
-	float: left;
-	padding: 0 36px;
-}
-.secnav > li a{
-	display: inline-block;
-	line-height: 80px;
-}
-.secnav > li.current a{
-	color: #0090d3;
-	border-bottom: 3px solid #0090d3;
-	font-weight: 700;
-}
 
 
+.secondaryContent h1{
+    padding: 40px 0;
+    font-size: 28px;
+    line-height: 34px;
+}
+.secondaryContent h3{
+    font-size: 24px;
+    line-height: 50px;
+}
 .secondaryContent .missions .right > img{
 	width: 100%;
 }
 .secondaryContent .characters ul > li{
 	width: 33.333%;
+    height: 260px;
 }
 .secondaryContent .characters p{
 	width: 85%;
@@ -50,5 +42,12 @@
 }
 
 #footer{
-
+    overflow: hidden;
+    padding: 40px 5% 40px 8%;
+}
+.hotline{
+    float: left;
+}
+.copyright{
+    float: right;
 }

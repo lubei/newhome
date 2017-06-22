@@ -1,15 +1,21 @@
-/* ----- Thin CSS Rules ----- */
-body{
-font-size:.8em;
-}
 #container{
-width:80%;
+    width: 100%;
+    font-size: 13px;
 }
-#primaryContent{
-width:100%;
-line-height: 125px;
+.secondaryContent h1{
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 26px;
 }
-#secondaryContent{
-width:100%;
-line-height: 125px;
+.secondaryContent h3{
+    font-size: 17px;
+    line-height: 36px;
+}
+.secondaryContent p{
+    line-height: 24px;
+}
+.secondaryContent .characters ul > li{
+    padding: 0 10%;
+    width: 80%;
+    height: 160px;
 }
