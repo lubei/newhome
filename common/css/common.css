@@ -40,6 +40,10 @@ a {
     text-transform: none;
 }
 
+img{
+	vertical-align: top;
+}
+
 a img {
     border: 0;
 }

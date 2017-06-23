@@ -7,27 +7,18 @@
 	padding: 28px 5% 15px 5%;
 	font-size: 18px;
 }
-.navigation{
-	float: left;
-}
 .navigation li{
 	float: left;
 	padding: 0 20px;
 	line-height: 84px;
 }
-.logo{
+#header .logo{
 	margin-right: 40px;
 }
 
 
-.secondaryContent h1{
-    padding: 40px 0;
-    font-size: 28px;
-    line-height: 34px;
-}
-.secondaryContent h3{
-    font-size: 24px;
-    line-height: 50px;
+.secondaryContent p{
+    margin-bottom: 30px;
 }
 .secondaryContent .missions .right > img{
 	width: 100%;
@@ -45,9 +36,15 @@
     overflow: hidden;
     padding: 40px 5% 40px 8%;
 }
+.copyright{
+	float: right;
+	text-align: right;
+}
+.copyright > ul{
+	text-align: right;
+}
 .hotline{
     float: left;
+    border-bottom: 0;
 }
-.copyright{
-    float: right;
-}
+

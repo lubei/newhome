@@ -1,21 +1,67 @@
 #container{
     width: 100%;
-    font-size: 13px;
+    font-size: 0.5547rem;
+}
+#header .navigation{
+    display: none;
+}
+#header .menu{
+    display: block;
+    float: left;
+    margin-right: 0.5rem;
+    width: 2.45rem;
+    height: 2.67rem;
+    background-color: #6f7b8b;
+}
+#header .logo{
+    float: inherit;
+    display: table-cell;
+    height: 2.67rem;
+    vertical-align: middle;
+}
+#header .logo > img{
+    width: 75%;
+    vertical-align: middle;
+}
+.banner > label{
+    font-size: 0.85rem;
 }
 .secondaryContent h1{
-    padding: 20px 0;
-    font-size: 20px;
-    line-height: 26px;
+    padding: 0.43rem 0;
+    font-size: 0.85rem;
+}
+.secondaryContent h2{
+    font-size: 0.85rem;
 }
 .secondaryContent h3{
     font-size: 17px;
-    line-height: 36px;
+    line-height: 0.75rem;
 }
 .secondaryContent p{
-    line-height: 24px;
+    line-height: 0.7rem;
+}
+.secondaryContent .missions .left, .secondaryContent .missions .right{
+    display: block;
+    width:  100%;
 }
 .secondaryContent .characters ul > li{
     padding: 0 10%;
     width: 80%;
-    height: 160px;
+    height: 8rem;
+}
+
+.hotline .phonebox > h1{
+    font-size: 0.85rem;
+}
+.hotline .phonebox > p{
+    font-size: 0.597rem;
+    line-height: 0.7rem;
+}
+.copyright > ul{
+    font-size: 0.512rem;
+    text-align: center;
+    line-height: 0.7rem;
+}
+.copyright > p{
+    font-size: 0.469rem;
 }

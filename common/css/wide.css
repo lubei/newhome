@@ -4,14 +4,32 @@
 }
 #header{
 	margin: 0 auto;
-	padding: 28px 50px 15px 50px;
 	font-size: 18px;
 }
-.navigation{
-	float: left;
+#header .navigation{
+    display: none;
+}
+#header .menu{
+    display: block;
+    float: left;
+    width: 115px;
+    height: 125px;
+    background-color: #6f7b8b;
 }
 .navigation li{
 	float: left;
 	padding: 0 20px;
 	line-height: 80px;
+}
+.secondaryContent h2{
+    font-size: 22px;
+    line-height: 26px;
+}
+.secondaryContent .characters ul > li{
+	width: 50%;
+    height: 260px;
+}
+.secondaryContent .characters p{
+	width: 85%;
+	margin: 0 auto;
 }
