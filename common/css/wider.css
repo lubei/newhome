@@ -25,11 +25,18 @@
 }
 .secondaryContent .characters ul > li{
 	width: 33.333%;
-    height: 260px;
+    height: 250px;
+	margin-bottom: 50px;
 }
 .secondaryContent .characters p{
 	width: 85%;
 	margin: 0 auto;
+}
+.secondaryContent .features ul > li{
+	width: 22%;
+}
+.secondaryContent .supports ul > li{
+	width: 33.333%;
 }
 
 #footer{

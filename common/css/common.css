@@ -77,11 +77,3 @@ ul, ol, dl {
 dd, dt, li {
     display: block;
 }
-
-.icon {
-    width: 1rem;
-    height: 1rem;
-    fill: currentColor;
-    vertical-align: -0.15rem;
-    overflow: hidden;
-}

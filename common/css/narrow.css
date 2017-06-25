@@ -2,8 +2,37 @@
     width: 100%;
     font-size: 0.5547rem;
 }
+.ft-1 li > h3{
+    font-size: 0.64rem;
+    line-height: 1rem;
+    margin-bottom: 0.45rem;
+}
 #header .navigation{
     display: none;
+}
+#header .navigation-slide{
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left:50%;
+    margin-left: -45%;
+    top: 4rem;
+    width: 90%;
+    background-color: #eee;
+}
+#header .navigation-slide > li{
+    line-height: 1.8rem;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 0.2rem 0.64rem;
+}
+#header .navigation-slide > li:last-child{
+    border-bottom: none;
+}
+#header .navigation-slide > li a{
+    color: #1b1b1b;
+}
+#header .navigation-slide .about > li{
+    line-height: 1.4rem;
 }
 #header .menu{
     display: block;
@@ -16,11 +45,12 @@
 #header .logo{
     float: inherit;
     display: table-cell;
-    height: 2.67rem;
     vertical-align: middle;
+    width: 6rem;
+    height: 2.67rem;
 }
 #header .logo > img{
-    width: 75%;
+    width: 100%;
     vertical-align: middle;
 }
 .banner > label{
@@ -34,11 +64,11 @@
     font-size: 0.85rem;
 }
 .secondaryContent h3{
-    font-size: 17px;
-    line-height: 0.75rem;
+    font-size: 0.725rem;
+    line-height: 1.3rem;
 }
 .secondaryContent p{
-    line-height: 0.7rem;
+    line-height: 1rem;
 }
 .secondaryContent .missions .left, .secondaryContent .missions .right{
     display: block;
@@ -48,20 +78,54 @@
     padding: 0 10%;
     width: 80%;
     height: 8rem;
+    margin-bottom: 0.5rem;
+}
+.secondaryContent .characters .iconfont{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+.secondaryContent .features ul > li{
+    width: 96%;
+}
+.secondaryContent .supports ul > li{
+    text-align: left;
+}
+.secondaryContent .patterns ul > li{
+    width: 80%;
+    height: 10rem;
+    padding: 7.5%;
+    margin: 2%;
 }
 
+
+
+
+
+.hotline .phonebox{
+    padding: 0.3rem 0 1rem 0;
+}
 .hotline .phonebox > h1{
     font-size: 0.85rem;
 }
 .hotline .phonebox > p{
     font-size: 0.597rem;
-    line-height: 0.7rem;
+    line-height: 1rem;
 }
 .copyright > ul{
     font-size: 0.512rem;
     text-align: center;
-    line-height: 0.7rem;
+    line-height: 1rem;
+}
+.copyright li{
+    padding-left: 0;
+    padding-right: 0.4rem;
+}
+.copyright li:last-child{
+    padding-right: 0;
 }
 .copyright > p{
+    width: 90%;
+    margin: 0 auto;
     font-size: 0.469rem;
+    line-height: 0.8rem;
 }

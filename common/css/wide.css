@@ -7,20 +7,52 @@
 	font-size: 18px;
 }
 #header .navigation{
-    display: none;
+	display: none;
+}
+#header .navigation-slide{
+	display: none;
+	position: absolute;
+	z-index: 2;
+	left:50%;
+	margin-left: -45%;
+	top: 4rem;
+	width: 90%;
+	background-color: #eee;
+}
+#header .navigation-slide > li{
+	line-height: 1.8rem;
+	border-bottom: 1px solid #d8d8d8;
+	padding: 0.2rem 0.64rem;
+}
+#header .navigation-slide > li:last-child{
+	border-bottom: none;
+}
+#header .navigation-slide > li a{
+	color: #1b1b1b;
+}
+#header .navigation-slide .about > li{
+	line-height: 1.4rem;
 }
 #header .menu{
-    display: block;
-    float: left;
-    width: 115px;
-    height: 125px;
-    background-color: #6f7b8b;
-}
-.navigation li{
+	display: block;
 	float: left;
-	padding: 0 20px;
-	line-height: 80px;
+	margin-right: 0.5rem;
+	width: 2.45rem;
+	height: 2.67rem;
+	background-color: #6f7b8b;
 }
+#header .logo{
+	float: inherit;
+	display: table-cell;
+	vertical-align: middle;
+	width: 5rem;
+	height: 2.67rem;
+}
+#header .logo > img{
+	width: 100%;
+	vertical-align: middle;
+}
+
 .secondaryContent h2{
     font-size: 22px;
     line-height: 26px;
@@ -32,4 +64,10 @@
 .secondaryContent .characters p{
 	width: 85%;
 	margin: 0 auto;
+}
+.secondaryContent .features ul > li{
+	width: 46%;
+}
+.secondaryContent .supports ul > li{
+	text-align: left;
 }

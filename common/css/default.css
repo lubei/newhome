@@ -8,7 +8,11 @@ a{
 .pd-1{
     padding: 28px 8%;
 }
-
+.ft-1 li > h3{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
 /*header*/
 #header{
     overflow: hidden;
@@ -24,18 +28,27 @@ a{
 .navigation li.current a{
     color: #0090d3;
 }
+#header .navigation-slide{
+    display: none;
+}
 #header .logo{
     float: left;
 }
 #header .search{
-    float: right;
-    width: 5px;
-    height: 5px;
+
 }
 
 .banner{
     position: relative;
     width: 100%;
+}
+.banner > .dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("file:///Users/lubei/Desktop/newhome/img/bg_dot.png") 0 0 repeat;
 }
 .banner > img{
     width: 100%;
@@ -120,18 +133,59 @@ a{
 .secondaryContent .missions .right > img{
     width: 100%;
 }
-.secondaryContent .characters{
+.secondaryContent .characters, .secondaryContent .supports{
     background-color: #eee;
 }
-.secondaryContent .characters ul{
+.secondaryContent .characters ul, .secondaryContent .supports ul, .secondaryContent .patterns ul{
     overflow: hidden;
 }
-.secondaryContent .characters ul > li{
+.secondaryContent .characters ul > li, .secondaryContent .supports ul > li, .secondaryContent .patterns ul > li{
     float: left;
     text-align: center;
 }
+.secondaryContent .characters .iconfont{
+    font-size: 58px;
+    line-height: 90px;
+    color: #0090d3;
+}
+.secondaryContent .features ul > li, .secondaryContent .supports ul > li, .secondaryContent .patterns ul > li{
+    margin-bottom: 30px;
+}
 .secondaryContent .characters p{
     color: #707070;
+}
+.secondaryContent .features ul{
+    overflow: hidden;
+    background-color: #fff;
+}
+.secondaryContent .features ul > li{
+    float: left;
+    padding-right: 4%;
+
+}
+.secondaryContent .features ul > li:last-child{
+    padding-right: 0;
+}
+.secondaryContent .supports p, .secondaryContent .features p{
+    color: #707070;
+}
+.secondaryContent .supports p{
+    width: 80%;
+    margin: 0 auto;
+}
+.secondaryContent .patterns ul{
+
+}
+.secondaryContent .patterns ul > li{
+    width: 33.5%;
+    height: 260px;
+    margin: 3%;
+    padding: 5%;
+    border: 1px solid #eee;
+    box-shadow: 0 0 5px rgba(0,0,0, .1);
+}
+.secondaryContent .patterns h3{
+    margin-bottom: 13px;
 }
 
 /*footer*/
