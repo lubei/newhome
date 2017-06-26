@@ -48,7 +48,7 @@ a{
     top: 0;
     width: 100%;
     height: 100%;
-    background: url("file:///Users/lubei/Desktop/newhome/img/bg_dot.png") 0 0 repeat;
+    background: url("/img/bg_dot.png") 0 0 repeat;
 }
 .banner > img{
     width: 100%;
