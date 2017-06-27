@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="400fa248-6dab-4b9c-91cb-9e3369dc440f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/banner_01.jpg" afterPath="$PROJECT_DIR$/img/banner_01.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/common.css" afterPath="$PROJECT_DIR$/common/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/default.css" afterPath="$PROJECT_DIR$/common/css/default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/narrow.css" afterPath="$PROJECT_DIR$/common/css/narrow.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/wide.css" afterPath="$PROJECT_DIR$/common/css/wide.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/wider.css" afterPath="$PROJECT_DIR$/common/css/wider.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -309,18 +302,17 @@
       <updated>1497962985612</updated>
       <workItem from="1497962987948" duration="5214000" />
       <workItem from="1498047649175" duration="7945000" />
-      <workItem from="1498219515131" duration="11604000" />
+      <workItem from="1498219515131" duration="11820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24763000" />
+    <option name="totallyTimeSpent" value="24979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="25" width="1400" height="753" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
