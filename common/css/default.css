@@ -4,15 +4,47 @@ body{
 a{
     color: #313131;
 }
-
+.clear{
+    clear: both;
+}
 .pd-1{
     padding: 28px 8%;
+}
+.pd-2{
+    padding: 28px 0;
 }
 .ft-1 li > h3{
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
 }
+.bg-gray{
+    background-color: #f7f7f7;
+}
+.title-1{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.bg-texture-1{
+    background: url("/img/texture_01.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.overflow-hid{
+    overflow: hidden;
+}
+.title-left{
+    float: left;
+}
+.title-right{
+    float: right;
+    color: #7d7d7d;
+    line-height: 50px;
+}
+a.blue{
+    color: #0090d3;
+}
+
 /*header*/
 #header{
     overflow: hidden;
@@ -37,6 +69,273 @@ a{
 #header .search{
 
 }
+
+/*首页*/
+.home{
+    position: relative;
+    z-index: 2;
+}
+.home .navigation, .home .logo{
+    position: relative;
+    z-index: 2;
+}
+.home .navigation li a{
+    color: #fff;
+}
+.home .banner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.home .banner label{
+    color: #fff;
+}
+.searchpanel{
+    position: relative;
+}
+.searchpanel > input{
+    position: relative;
+    width: 100%;
+    font-size: 22px;
+    line-height: 62px;
+    padding: 0 20px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    box-sizing: border-box;
+}
+.searchpanel .iconfont.search{
+    position: absolute;
+    right: 10%;
+    top: 45px;
+    display: block;
+    color: #2da4db;
+    font-size: 30px;
+}
+.seriousWrapper{
+    overflow: hidden;
+}
+.seriousWrapper > li{
+    float: left;
+    width: 20%;
+    height: 180px;
+    text-align: center;
+}
+.seriousWrapper > li > i{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.recommandWrapper{
+
+}
+.recommandWrapper >h1, .newsWrapper .overflow-hid{
+    margin-bottom: 30px;
+ }
+
+.itemList{
+    overflow: hidden;
+    width: 100%;
+}
+.itemList > li{
+    float: left;
+    position: relative;
+    width: 31%;
+    padding-bottom: 31%;
+    margin-right: 3.5%;
+}
+.itemList > li:nth-child(3n){
+    margin-right: 0;
+}
+.itemList .cont {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.recommandWrapper .itemList .cont{
+    padding-top: 25%;
+    padding-left: 10%;
+}
+.recommandWrapper .itemList .cont > p{
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,21,60,.36);
+}
+.recommandWrapper .itemList .cont .s{
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 4%;
+}
+.recommandWrapper .itemList .cont .name{
+    font-size: 30px;
+    line-height: 35px;
+}
+.titleTab{
+    overflow: hidden;
+    border-bottom: 1px solid #d2d2d2;
+}
+.titleTab > li{
+    float: left;
+    margin-right: 70px;
+    border-bottom: 3px solid #f7f7f7;
+}
+.titleTab > li:last-child{
+    float: right;
+    line-height: 50px;
+    margin-right: 0;
+}
+.titleTab > li:last-child a{
+    color: #7d7d7d;
+}
+.titleTab > li.current{
+    border-bottom: 3px solid #0090d3;
+}
+.hotWrapper .itemList > li{
+    background-color: #fff;
+    margin-top: 35px;
+    box-shadow: 0 0 5px rgba(0,0,0,.08);
+}
+.hotWrapper .itemList .f1 .thumbnail{
+    display: table-cell;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: #0090d3;
+    vertical-align: middle;
+    text-align: center;
+}
+.hotWrapper .itemList{
+    overflow: inherit;
+}
+.hotWrapper .itemList .f2{
+    display: none;
+}
+.hotWrapper .itemList .name{
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: bold;
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 12%;
+}
+.hotWrapper .itemList .time{
+    position: absolute;
+    bottom: 5%;
+    left: 6%;
+    font-size: 14px;
+    color: #0090d3;
+    width: 86%;
+}
+.hotWrapper .itemList .hot, .hotWrapper .itemList .new{
+    position: absolute;
+    bottom: 5%;
+    right: 6%;
+}
+.hotWrapper .itemList .hot{
+    color: #f13d2f;
+}
+.hotWrapper .itemList .new{
+    color: #36c9a8;
+    font-size: 0.4rem;
+    bottom: 0.08rem
+}
+.newsWrapper{
+    position: relative;
+    width: 84%;
+    height:100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.swiper-slide {
+    font-size: 16px;
+    background: #fff;
+    overflow: hidden;
+}
+.newsList .swiper-slide > img, .newsList .swiper-slide > p{
+    width: 100%;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+.newsList .swiper-slide h1{
+    font-size: 24px;
+    font-weight:bold;
+    margin-bottom: 15px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.newsList .swiper-slide .time{
+    color:#191919;
+}
+.newsList .swiper-slide .desc{
+    color:#7d7d7d;
+}
+.newsList .swiper-slide .keywords{
+    color:#0090d3;
+}
+.swiper-button-disabled{
+    opacity: .2;
+}
+.swiper-button-prev-news{
+    position: absolute;
+    top: 287px;
+    left: -30px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.swiper-button-next-news{
+    position: absolute;
+    top: 287px;
+    right: -30px;
+}
+.swiper-button-prev-news i, .swiper-button-next-news i{
+    font-size: 24px;
+}
+
+/*联系我们*/
+.secondaryContent-1{
+    width: 650px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.secondaryContent-1 .contact-name{
+    color: #191919;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+.secondaryContent-1 .info, .secondaryContent-1 .contact-address{
+    font-size: 18px;
+    line-height: 24px;
+}
+.secondaryContent-1 .contact-address{
+    margin-bottom: 55px;
+    position: relative;
+    padding-left: 20px;
+}
+.secondaryContent-1 .info{
+    color: #0090d3;
+}
+.secondaryContent-1 .contact-address .iconfont{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #0090d3;
+}
+
+
+
+
+
+
 
 .banner{
     position: relative;
@@ -90,7 +389,6 @@ a{
     border-bottom: 3px solid #0090d3;
     font-weight: 700;
 }
-
 
 .secondaryContent{
 
@@ -148,6 +446,11 @@ a{
     line-height: 90px;
     color: #0090d3;
 }
+
+
+
+
+/*培训合作*/
 .secondaryContent .features ul > li, .secondaryContent .supports ul > li, .secondaryContent .patterns ul > li{
     margin-bottom: 30px;
 }
@@ -166,6 +469,18 @@ a{
 .secondaryContent .features ul > li:last-child{
     padding-right: 0;
 }
+.secondaryContent .features ul > li .iconfont{
+    display: inline-block;
+    font-size: 45px;
+    color: #0090d3;
+    padding-bottom: 15px;
+}
+.secondaryContent .supports ul > li{
+    width: 33.333%;
+}
+.secondaryContent .supports{
+    position: relative;
+}
 .secondaryContent .supports p, .secondaryContent .features p{
     color: #707070;
 }
@@ -173,22 +488,152 @@ a{
     width: 80%;
     margin: 0 auto;
 }
+.secondaryContent .supports .iconfont{
+    display: inline-block;
+    position: relative;
+    width: 70px;
+    height:60px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #707070;
+}
+.secondaryContent .supports .iconfont:after{
+    content: '.';
+    position: absolute;
+    bottom: -3px;
+    left:50%;
+    margin-left: -6px;
+    font-size: 47px;
+    color: #b1b0b0;
+}
+.secondaryContent .supports .line{
+    position: absolute;
+    left: 0;
+    top: 192px;
+    width: 100%;
+    border-bottom: 1px solid #b1b0b0;
+}
 .secondaryContent .patterns ul{
 
 }
 .secondaryContent .patterns ul > li{
     width: 33.5%;
-    height: 260px;
+    min-height: 350px;
     margin: 3%;
-    padding: 5%;
+    padding: 3% 5% 0 5%;
     border: 1px solid #eee;
     box-shadow: 0 0 5px rgba(0,0,0, .1);
 }
 .secondaryContent .patterns h3{
     margin-bottom: 13px;
 }
+.secondaryContent .patterns .iconfont{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 42px;
+    color: #fff;
+    margin-bottom: 20px;
+    background:#3facbb;
+    background:-moz-linear-gradient(top, #4bb1a5, #2ea4da);
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#4bb1a5), to(#2ea4da));
+    background:-o-linear-gradient(top, #4bb1a5, #2ea4da);
+}
+.secondaryContent .patterns p{
+    color: #707070;
+    margin-bottom: 0;
+}
+.secondaryContent .contactus{
+    color: #fff;
+    background-color: #6f7b8b;
+}
+.secondaryContent .contactus h1{
+    color: #fff;
+    text-align: left;
+}
+.secondaryContent .contactus ul{
+    padding-bottom: 40px;
+}
+.secondaryContent .contactus ul > li{
+    float: left;
+    font-size: 18px;
+    margin-right: 80px;
+}
+.secondaryContent .contactus ul > li .iconfont{
+    font-size: 26px;
+    vertical-align: -2px;
+}
 
-/*footer*/
+
+/*人才招聘*/
+.secondaryContent .joinus h2{
+    font-weight: bold;
+}
+.secondaryContent .joinus ul > li{
+    margin-bottom: 90px;
+}
+.secondaryContent .joinus ul > li p{
+    font-size: 18px;
+}
+.secondaryContent .joinus ul > li span{
+    display: inline-block;
+}
+.secondaryContent .joinus ul > li span:nth-child(1),.secondaryContent .joinus ul > li span:nth-child(4){
+    margin-right: 30px;
+}
+
+
+/*咨询服务*/
+.consult-wrapper .consult-container{
+    padding-top: 60px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.consult-wrapper .consult-container:last-child{
+    border-bottom: none;
+}
+.secondaryContent .consult-container > h2{
+    margin-bottom: 58px;
+}
+.consult-container ul{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.consult-list{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+.consult-list:nth-child(3n){
+    margin-right: 0;
+}
+.consult-list > h2{
+    position: relative;
+    font-weight: bold;
+    line-height: 28px;
+    padding-left: 60px;
+}
+.consult-list > p{
+    color: #7d7d7d;
+}
+.consult-list .iconfont{
+    position: absolute;
+    left: 0;
+    top: 13px;
+    font-size: 50px;
+    margin-right: 15px;
+    color: #0090d3;
+    font-weight: normal;
+}
+
+
+
+
+/*底部通用*/
 #footer{
     background-color: #eeeeee;
     padding: 20px 0;
@@ -196,9 +641,17 @@ a{
 .hotline{
     border-bottom: 1px solid #bfbfbf;
 }
+.hotline .iconfont{
+    position: absolute;
+    top: 20px;
+    left:0;
+    font-size: 40px;
+}
 .hotline .phonebox{
+    position: relative;
+    width: 180px;
     text-align: center;
-    padding: 6px 0 28px 0;
+    padding: 6px 0 28px 40px;
 }
 .hotline .phonebox > h1{
     font-size: 28px;

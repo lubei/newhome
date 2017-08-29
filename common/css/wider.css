@@ -16,7 +16,18 @@
 	margin-right: 40px;
 }
 
+/*首页*/
+.recommandWrapper .itemList .cont .s{
+	font-size: 20px;
+}
+.recommandWrapper .itemList .cont .name{
+	font-size: 34px;
+	line-height: 38px;
+}
 
+
+
+/*关于甫崎*/
 .secondaryContent p{
     margin-bottom: 30px;
 }
@@ -35,10 +46,12 @@
 .secondaryContent .features ul > li{
 	width: 22%;
 }
-.secondaryContent .supports ul > li{
-	width: 33.333%;
-}
 
+
+/*培训合作*/
+
+
+/*底部通用*/
 #footer{
     overflow: hidden;
     padding: 40px 5% 40px 8%;

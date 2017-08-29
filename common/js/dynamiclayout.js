@@ -12,12 +12,25 @@ function dynamicLayout(){
   var browserWidth = getBrowserWidth();
   if (browserWidth < 750){
       changeLayout("narrow");
+      //swiperNews.updateContainerSize();
+      if(typeof(swiperNews)!='undefined'){
+          swiperNews.detachEvents();
+          $('.newsList li').css({'width':'12rem','marginRight':'1rem'});
+      }
   }
   if ((browserWidth >= 750) && (browserWidth <= 950)){
       changeLayout("wide");
+      if(typeof(swiperNews)!='undefined'){
+          swiperNews.onResize();
+          swiperNews.attachEvents()
+      }
   }
   if (browserWidth > 950){
       changeLayout("wider");
+      if(typeof(swiperNews)!='undefined'){
+          swiperNews.onResize();
+          swiperNews.attachEvents()
+      }
   }
 }
 

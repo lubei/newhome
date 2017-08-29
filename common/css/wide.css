@@ -1,3 +1,8 @@
+.title-1{
+	font-size: 0.45rem;
+	line-height: 0.6rem;
+}
+
 #container{
 	width: 100%;
 	font-size: 16px;
@@ -52,7 +57,27 @@
 	width: 100%;
 	vertical-align: middle;
 }
+/*首页*/
+.recommandWrapper > h1{
+	margin-bottom: 0.45rem;
+}
+.recommandWrapper .itemList .cont .s{
+	font-size: 16px;
+}
+.recommandWrapper .itemList .cont .name{
+	font-size: 0.5rem;
+	line-height: 0.6rem;
+}
+.hotWrapper .itemList .name{
+	font-size: 18px;
+	line-height: 24px;
+	padding-top: 0;
+}
+.hotWrapper .itemList .time{
+	font-size: 12px;
+}
 
+/*关于甫崎*/
 .secondaryContent h2{
     font-size: 22px;
     line-height: 26px;
@@ -69,5 +94,24 @@
 	width: 46%;
 }
 .secondaryContent .supports ul > li{
-	text-align: left;
+	text-align: center;
+}
+
+/*培训合作*/
+.secondaryContent .patterns .iconfont{
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 36px;
+}
+
+/*咨询服务*/
+.consult-list .iconfont{
+	font-size: 40px;
+}
+
+
+/*底部通用*/
+.hotline .phonebox{
+	margin: 0 auto;
 }

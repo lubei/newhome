@@ -1,17 +1,38 @@
+.pd-1{
+    padding: 1rem 8%;
+}
+.pd-2{
+    padding: 1rem 0;
+}
 #container{
     width: 100%;
     font-size: 0.5547rem;
 }
+
 .ft-1 li > h3{
     font-size: 0.64rem;
     line-height: 1rem;
     margin-bottom: 0.45rem;
 }
+.title-1{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+.bg-texture-1{
+    background: url("/img/texture_01_mob.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.title-right{
+    line-height: 1.2rem;
+}
+
+
+
 #header .navigation{
     display: none;
 }
 #header .navigation-slide{
-    display: block;
+    display: none;
     position: absolute;
     z-index: 2;
     left:50%;
@@ -53,6 +74,152 @@
     width: 100%;
     vertical-align: middle;
 }
+
+/*首页*/
+.searchpanel > input{
+    font-size: 0.64rem;
+    line-height: 1.9rem;
+    padding: 0 0.55rem;
+    border-radius: 0.2rem;
+}
+.searchpanel .iconfont.search{
+    right: 11%;
+    top: 1.5rem;
+    font-size: 0.9rem;
+}
+.seriousWrapper > li{
+    width: 55%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 1.8rem;
+}
+.seriousWrapper > li:nth-child(2n){
+    width: 45%;
+}
+.seriousWrapper > li > i{
+    display: inline-block;
+    float: left;
+    width: 1.8rem;
+    height: 1.8rem;
+    padding-right: 0.3rem;
+    vertical-align: middle;
+    text-align: center;
+}
+.seriousWrapper > li > i>img{
+    width: 100%;
+}
+.seriousWrapper > li > p{
+    float: left;
+    line-height: 1.8rem;
+}
+.itemList > li{
+    float: none;
+    width: 100%;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-bottom: 0.768rem;
+}
+.itemList > li:last-child{
+    margin-right: 0;
+}
+.titleTab > li{
+    margin-right: 0.8rem;
+}
+.titleTab > li:last-child{
+    line-height: 1.2rem;
+}
+.recommandWrapper >h1, .newsWrapper .overflow-hid{
+    margin-bottom: 0.8rem;
+}
+.recommandWrapper .itemList .cont{
+    display: table-cell;
+    position: relative;
+    box-sizing: border-box;
+    height:4.8rem;
+    padding-top: 0;
+    padding-left: 1rem;
+    vertical-align: middle;
+}
+.recommandWrapper .itemList .cont .s{
+    font-size: 0.46rem;
+    margin-bottom: 0.2rem;
+}
+.recommandWrapper .itemList .cont .name{
+    font-size: 0.896rem;
+    line-height: 1.1rem;
+}
+.hotWrapper .itemList > li{
+    height: 5.5rem;
+    margin-top: 0.768rem;
+}
+.hotWrapper .itemList .f1 .thumbnail{
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 2rem;
+}
+.hotWrapper .itemList .name{
+    position: absolute;
+    left: 4.5rem;
+    top: 1.1rem;
+    font-size: 0.64rem;
+    line-height: 0.9rem;
+    width: 8rem;
+    padding-top: 0;
+}
+.hotWrapper .itemList .time{
+    bottom: 1.5rem;
+    left: 4.5rem;
+    font-size: 0.512rem;
+    width: 8rem;
+}
+.hotWrapper .itemList .hot{
+    bottom: 1.5rem;
+}
+.hotWrapper .itemList .new{
+    font-size: 1.2rem;
+    bottom: 1.1rem
+}
+.newsWrapper .swiper-container{
+    overflow: scroll;
+}
+.newsWrapper .swiper-slide {
+    width: 90%;
+    font-size: 0.55rem;
+}
+.newsList .swiper-slide > img, .newsList .swiper-slide > p{
+    margin-bottom: 0.5rem;
+    line-height: 0.8rem;
+}
+.newsList .swiper-slide h1{
+    font-size: 0.725rem;
+    margin-bottom: 0.5rem;
+}
+.swiper-button-prev-news i, .swiper-button-next-news i{
+    display: none;
+}
+
+/*联系我们*/
+.secondaryContent-1{
+    width: 86%;
+    padding: 2.6rem 0;
+}
+.secondaryContent-1 .contact-name{
+    font-size: 0.725rem;
+    margin-bottom: 1.5rem;
+}
+.secondaryContent-1 .info, .secondaryContent-1 .contact-address{
+    font-size: 0.64rem;
+    line-height: 1rem;
+}
+.secondaryContent-1 .contact-address{
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+/*关于甫崎*/
 .banner > label{
     font-size: 0.85rem;
 }
@@ -84,25 +251,144 @@
     font-size: 1.6rem;
     line-height: 2.4rem;
 }
+
+
+
+/*培训合作*/
+.secondaryContent .features ul, .secondaryContent .supports ul, .secondaryContent .patterns ul{
+    padding-top: 0.7rem;
+}
+.secondaryContent .features ul > li .iconfont{
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+    padding-bottom: 0;
+}
 .secondaryContent .features ul > li{
     width: 96%;
 }
 .secondaryContent .supports ul > li{
+    position: relative;
     text-align: left;
+    width: 100%;
+    padding-left: 15%;
+    box-sizing: border-box;
+}
+.secondaryContent .supports p{
+    width: 100%;
+}
+.secondaryContent .supports .iconfont{
+    position: absolute;
+    top: -0.18rem;
+    left: 0;
+    font-size: 1.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.secondaryContent .supports .iconfont:after{
+    font-size: 2rem;
+    bottom: 0.3rem;
+    margin-left: 0.5rem;
+}
+.secondaryContent .supports .line{
+    width: auto;
+    height: 100%;
+    top: 0;
+    left: 2.8rem;
+    border-left: 1px solid #b1b0b0;
 }
 .secondaryContent .patterns ul > li{
     width: 80%;
-    height: 10rem;
+    min-height: auto;
+    height: auto;
     padding: 7.5%;
     margin: 2%;
 }
+.secondaryContent .features.ft-1 li > h3{
+    display: inline-block;
+    vertical-align: 0.4rem;
+    margin-bottom: 0;
+    padding-left: 0.3rem
+}
+.secondaryContent .patterns .iconfont{
+    width: 4.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.45rem;
+}
+.secondaryContent .contactus ul{
+    padding-bottom: 1rem;
+}
+.secondaryContent .contactus ul > li:first-child{
+    font-size: 0.64rem;
+}
+.secondaryContent .contactus ul > li{
+    float: none;
+    font-size: 0.78rem;
+    line-height: 2rem;
+    margin-right: 0;
+}
+.secondaryContent .contactus ul > li .iconfont{
+    font-size: 1.2rem;
+    vertical-align: -0.2rem;
+}
 
+/*人才招聘*/
+.secondaryContent .joinus h1{
+    margin-bottom: 1rem;
+}
+.secondaryContent .joinus h2{
+    font-size: 0.725rem;
+    line-height: 1.2rem;
+}
+.secondaryContent .joinus ul > li{
+    margin-bottom: 3.5rem;
+}
+.secondaryContent .joinus ul > li p{
+    font-size: 0.64rem;
+    line-height: 1.1rem;
+}
 
+/*咨询服务*/
+.consult-wrapper .consult-container{
+    padding-top: 1.8rem;
+}
+.consult-container ul{
+    margin-bottom: 0.2rem;
+}
+.consult-list{
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+.consult-list > h2{
+    margin-bottom: 0.54rem;
+    line-height: 1.1rem;
+    padding-left: 1.7rem;
+    padding-top: 0.2rem;
+}
+.consult-list .iconfont{
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+    vertical-align: -0.16rem;
+    top: 0.2rem;
+}
+.secondaryContent .consult-list p{
+    margin-bottom: 1.7rem;
+}
+.secondaryContent .consult-container > h2{
+    margin-bottom: 2rem;
+}
 
-
-
+/*底部通用*/
+.hotline .iconfont{
+    top: 0.6rem;
+    font-size: 1.2rem;
+}
 .hotline .phonebox{
-    padding: 0.3rem 0 1rem 0;
+    width: 6.7rem;
+    margin: 0 auto;
+    padding: 0.3rem 0 1rem 0.6rem;
 }
 .hotline .phonebox > h1{
     font-size: 0.85rem;
