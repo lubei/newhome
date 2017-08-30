@@ -28,15 +28,15 @@ a{
 }
 /*首页课程推荐背景样式*/
 .bg-texture-1{
-    background: url("/img/series_bg_01.png") 0 0 no-repeat;
+    background: url("/img/series_bg_01.png") top right no-repeat;
     background-size: auto 100%;
 }
 .bg-texture-2{
-    background: url("/img/series_bg_02.png") 0 0 no-repeat;
+    background: url("/img/series_bg_02.png") top right no-repeat;
     background-size: auto 100%;
 }
 .bg-texture-3{
-    background: url("/img/series_bg_03.png") 0 0 no-repeat;
+    background: url("/img/series_bg_03.png") top right no-repeat;
     background-size: auto 100%;
 }
 
