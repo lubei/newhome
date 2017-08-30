@@ -18,10 +18,20 @@
     font-size: 0.8rem;
     line-height: 1.2rem;
 }
+/*首页课程推荐背景样式*/
 .bg-texture-1{
-    background: url("/img/texture_01_mob.png") 0 0 no-repeat;
+    background: url("/img/series_bg_01.png") 0 0 no-repeat;
     background-size: 100% 100%;
 }
+.bg-texture-2{
+    background: url("/img/series_bg_02.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.bg-texture-3{
+    background: url("/img/series_bg_03.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
 .title-right{
     line-height: 1.2rem;
 }
@@ -76,6 +86,25 @@
 }
 
 /*首页*/
+#header.home .logo .iconfont{
+    font-size: 1.8rem;
+}
+#header.home .menu{
+    background: transparent;
+    text-align: center;
+    line-height: 2.67rem;
+}
+#header.home .menu .iconfont{
+    color: #fff;
+    font-size: 0.8rem;
+}
+#header.home .search{
+    top: 50%;
+    margin-top: -0.27rem;
+}
+#header.home .search .iconfont{
+    font-size: 0.65rem;
+}
 .searchpanel > input{
     font-size: 0.64rem;
     line-height: 1.9rem;

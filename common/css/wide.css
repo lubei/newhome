@@ -57,7 +57,30 @@
 	width: 100%;
 	vertical-align: middle;
 }
+.title-right{
+	font-size: 18px;
+}
+
 /*首页*/
+#header.home .logo .iconfont{
+    font-size: 1.8rem;
+}
+#header.home .menu{
+    background: transparent;
+    text-align: center;
+    line-height: 2.67rem;
+}
+#header.home .menu .iconfont{
+    color: #fff;
+    font-size: 0.8rem;
+}
+#header.home .search{
+    top: 50%;
+    margin-top: -0.27rem;
+}
+#header.home .search .iconfont{
+    font-size: 0.65rem;
+}
 .recommandWrapper > h1{
 	margin-bottom: 0.45rem;
 }
@@ -68,6 +91,10 @@
 	font-size: 0.5rem;
 	line-height: 0.6rem;
 }
+.titleTab > li:last-child a{
+	font-size: 18px;
+}
+
 .hotWrapper .itemList .name{
 	font-size: 18px;
 	line-height: 24px;

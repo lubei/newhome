@@ -26,10 +26,20 @@ a{
     font-weight: bold;
     line-height: 50px;
 }
+/*首页课程推荐背景样式*/
 .bg-texture-1{
-    background: url("/img/texture_01.png") 0 0 no-repeat;
-    background-size: 100% 100%;
+    background: url("/img/series_bg_01.png") 0 0 no-repeat;
+    background-size: auto 100%;
 }
+.bg-texture-2{
+    background: url("/img/series_bg_02.png") 0 0 no-repeat;
+    background-size: auto 100%;
+}
+.bg-texture-3{
+    background: url("/img/series_bg_03.png") 0 0 no-repeat;
+    background-size: auto 100%;
+}
+
 .overflow-hid{
     overflow: hidden;
 }
@@ -69,24 +79,62 @@ a.blue{
 #header .search{
 
 }
+.banner{
+    position: relative;
+    width: 100%;
+}
+.banner > .dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/img/bg_dot.png") 0 0 repeat;
+}
+.banner > img{
+    width: 100%;
+}
+.banner > label{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -15px;
+    width:200px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
 
 /*首页*/
+#header.home{
+    padding: 0;
+}
 .home{
     position: relative;
-    z-index: 2;
 }
-.home .navigation, .home .logo{
-    position: relative;
+.home .nav-container{
+    position: absolute;
     z-index: 2;
+    width: 100%;
+}
+#header.home .logo .iconfont{
+    color: #fff;
+    -webkit-text-stroke-width: 0px;
+}
+#header.home .search{
+    position: absolute;
+    right: 5%;
+    top: 28px;
+}
+#header.home .search .iconfont{
+    color: #fff;
 }
 .home .navigation li a{
     color: #fff;
 }
 .home .banner{
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
 }
 .home .banner label{
     color: #fff;
@@ -160,20 +208,7 @@ a.blue{
     padding-top: 25%;
     padding-left: 10%;
 }
-.recommandWrapper .itemList .cont > p{
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,21,60,.36);
-}
-.recommandWrapper .itemList .cont .s{
-    font-size: 20px;
-    font-style: italic;
-    margin-bottom: 4%;
-}
-.recommandWrapper .itemList .cont .name{
-    font-size: 30px;
-    line-height: 35px;
-}
+
 .titleTab{
     overflow: hidden;
     border-bottom: 1px solid #d2d2d2;
@@ -194,10 +229,15 @@ a.blue{
 .titleTab > li.current{
     border-bottom: 3px solid #0090d3;
 }
+.titleTab > li.current a{
+    color: #0090d3;
+}
 .hotWrapper .itemList > li{
     background-color: #fff;
     margin-top: 35px;
+    border: 1px solid #dcdcdc;
     box-shadow: 0 0 5px rgba(0,0,0,.08);
+    box-sizing: border-box;
 }
 .hotWrapper .itemList .f1 .thumbnail{
     display: table-cell;
@@ -337,32 +377,7 @@ a.blue{
 
 
 
-.banner{
-    position: relative;
-    width: 100%;
-}
-.banner > .dot{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: url("/img/bg_dot.png") 0 0 repeat;
-}
-.banner > img{
-    width: 100%;
-}
-.banner > label{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -100px;
-    margin-top: -15px;
-    width:200px;
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
-}
+
 
 /*关于甫崎*/
 .secnav{
@@ -649,7 +664,7 @@ a.blue{
 }
 .hotline .phonebox{
     position: relative;
-    width: 180px;
+    width: 200px;
     text-align: center;
     padding: 6px 0 28px 40px;
 }

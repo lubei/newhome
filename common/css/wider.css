@@ -15,8 +15,25 @@
 #header .logo{
 	margin-right: 40px;
 }
+.title-right{
+	font-size: 18px;
+}
 
 /*首页*/
+#header.home .logo{
+	line-height: 84px;
+}
+#header.home .logo .iconfont{
+	font-size: 54px;
+}
+#header.home .search .iconfont{
+	font-size: 22px;
+}
+.home .nav-container{
+	width: 90%;
+    left: 5%;
+    top: 28px;
+}
 .recommandWrapper .itemList .cont .s{
 	font-size: 20px;
 }
@@ -24,7 +41,9 @@
 	font-size: 34px;
 	line-height: 38px;
 }
-
+.titleTab > li:last-child a{
+	font-size: 18px;
+}
 
 
 /*关于甫崎*/
