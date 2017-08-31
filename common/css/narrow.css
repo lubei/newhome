@@ -41,7 +41,7 @@
 #header .navigation{
     display: none;
 }
-#header .navigation-slide{
+.slideicon .navigation-slide{
     display: none;
     position: absolute;
     z-index: 2;
@@ -51,19 +51,56 @@
     width: 90%;
     background-color: #eee;
 }
+.slideicon{
+    display: block;
+}
+.slideicon input[type=checkbox]:checked+label{
+    transform:rotate(90deg);
+    -ms-transform:rotate(180deg);   
+    -moz-transform:rotate(180deg);   
+    -webkit-transform:rotate(180deg); 
+    -o-transform:rotate(180deg); 
+    background-color:#ff9900;
+}
+.slideicon input[type=checkbox]:checked + ul{
+    display: block;
+}
+.slideicon input[type=checkbox]{
+    visibility: hidden;
+}
+.slideicon label{
+    display: inline-block;
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg);   
+    -moz-transform:rotate(0deg);   
+    -webkit-transform:rotate(0deg); 
+    -o-transform:rotate(0deg); 
+    transition:all .5s ease;
+    background-color:#ccc;
+}
+
 #header .navigation-slide > li{
     line-height: 1.8rem;
     border-bottom: 1px solid #d8d8d8;
     padding: 0.2rem 0.64rem;
+    overflow: hidden;
 }
 #header .navigation-slide > li:last-child{
     border-bottom: none;
 }
 #header .navigation-slide > li a{
     color: #1b1b1b;
+    display: inline-block;
+    float: left;
+}
+#header .navigation-slide > li i{
+    display: inline-block;
+    float: right;
+    font-size: 0.75rem;
 }
 #header .navigation-slide .about > li{
     line-height: 1.4rem;
+    overflow: hidden;
 }
 #header .menu{
     display: block;

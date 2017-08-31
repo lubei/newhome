@@ -57,7 +57,6 @@ a.blue{
 
 /*header*/
 #header{
-    overflow: hidden;
     width: 100%;
     box-sizing: border-box;
 }
@@ -71,6 +70,9 @@ a.blue{
     color: #0090d3;
 }
 #header .navigation-slide{
+    display: none;
+}
+.slideicon{
     display: none;
 }
 #header .logo{
