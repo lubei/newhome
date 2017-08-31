@@ -27,7 +27,35 @@
 </head>
 
 <body>
-<div id="container">
+<div id="menuMob">
+    <ul>
+        <li class="bd">推荐课程</li>
+        <li class="bd">热门课程</li>
+        <li class="bd">最新开课</li>
+        <li class="bd">所有课程</li>
+        <ul>
+            <li class="bd hover current"><a href=""><i class="iconfont"></i>IT服务管理<i class="iconfont"></i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont"></i>IT治理规划<i class="iconfont"></i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont"></i>项目管理<i class="iconfont"></i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont"></i>信息安全管理<i class="iconfont"></i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont"></i>管理能力<i class="iconfont"></i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont"></i>云与大数据<i class="iconfont"></i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont"></i>移动互联开发<i class="iconfont"></i></a></li>
+            <li><i class="iconfont"></i>虚拟化技术与软件开发应用</li>
+            <li class="hover sec"><a href="">虚拟化技术<i class="iconfont"></i></a></li>
+            <li class="bd hover sec"><a href="">软件开发<i class="iconfont"></i></a></li>
+            <li><i class="iconfont"></i>厂商系统管理与开发</li>
+            <li class="hover sec"><a href="">Microsoft<i class="iconfont"></i></a></li>
+            <li class="hover sec"><a href="">ORACLE<i class="iconfont"></i></a></li>
+            <li class="hover sec"><a href="">IBM<i class="iconfont"></i></a></li>
+            <li class="hover sec"><a href="">Linux<i class="iconfont"></i></a></li>
+            <li class="hover sec"><a href="">CISCO<i class="iconfont"></i></a></li>
+            <li class="bd hover sec"><a href="">工业设计<i class="iconfont"></i></a></li>
+            <li class="hover"><a href=""><i class="iconfont"></i>办公软件实战操作<i class="iconfont"></i></a></li>
+        </ul>
+    </ul>
+</div>
+<div id="container" class="hbg">
     <div id="header" class="home">
         <div class="nav-container">
             <div class="menu"><i class="iconfont">&#xe67a;</i></div>
@@ -56,12 +84,7 @@
                 <li><a href="#">公司新闻</a></li>
                 <li><a href="#">联系我们</a></li>
             </ul>
-            
             <div class="search"><i class="iconfont">&#xe67c;</i></div>
-        </div>
-        <div class="banner">
-            <img src="img/banner_03.jpg"/>
-            <label>关于关于</label>
         </div>
     </div>
     <div class="searchpanel pd-1">
@@ -251,11 +274,11 @@
         nextButton:'.swiper-button-next-news'
     });
 
-    // $('.slideicon').click(function(){
-    //     var nav = $('.navigation-slide');
-    //     var _this = $(this);
-    //     nav.slideToggle(300);
-    // })
+     $('#checkSlide').change(function(){
+         var nav = $('.navigation-slide');
+         var _this = $(this);
+         nav.slideToggle(300);
+     })
 
 </script>
 </body>

@@ -36,20 +36,57 @@
     line-height: 1.2rem;
 }
 
+#container.hbg{
+    background: url("/img/banner_h_mob.jpg") top center no-repeat;
+    background-size: 100% auto;
+}
 
+/*左侧主菜单*/
+#menuMob{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 67%;
+    height: 100%;
+    overflow: scroll;
+    font-size: 0.6rem;
+    color: #fff;
 
+}
+#menuMob li.current{
+    background:#4bb1a5;
+    background:-moz-linear-gradient(left, #2ea4da, #4bb1a5);
+    background:-webkit-linear-gradient(left, #2ea4da,#4bb1a5);
+    background:-o-linear-gradient(left, #2ea4da, #4bb1a5);
+}
+#menuMob .iconfont{
+    color: #fff;
+    font-size: 0.3rem;
+}
+#menuMob > ul{
+    background-color: #5b697c;
+    padding-top: 1rem;
+}
+#menuMob > ul > ul{
+    background-color: #6f7b8b;
+    padding-bottom: 1.3rem;
+}
+#menuMob a{
+    color: #fff;
+}
+#menuMob > ul li{
+    line-height: 1.9rem;
+    padding-left: 1.07rem;
+
+}
+#menuMob > ul > ul li{
+    line-height: 1.6rem;
+}
+#menuMob .bd{
+    border-bottom: 1px solid #8b94a1;
+}
 #header .navigation{
     display: none;
-}
-.slideicon .navigation-slide{
-    display: none;
-    position: absolute;
-    z-index: 2;
-    left:50%;
-    margin-left: -45%;
-    top: 3.5rem;
-    width: 90%;
-    background-color: #eee;
 }
 .slideicon{
     display: block;
@@ -59,16 +96,27 @@
     -ms-transform:rotate(180deg);   
     -moz-transform:rotate(180deg);   
     -webkit-transform:rotate(180deg); 
-    -o-transform:rotate(180deg); 
-    background-color:#ff9900;
+    -o-transform:rotate(180deg);
+    left: 9rem;
+    top: 1.15rem;
 }
-.slideicon input[type=checkbox]:checked + ul{
-    display: block;
+
+.slideicon .navigation-slide{
+    position: absolute;
+    z-index: 2;
+    left:50%;
+    margin-left: -45%;
+    top: 3.5rem;
+    width: 90%;
+    background-color: #eee;
 }
 .slideicon input[type=checkbox]{
     visibility: hidden;
 }
 .slideicon label{
+    position: absolute;
+    left: 9rem;
+    top: 1.15rem;
     display: inline-block;
     transform:rotate(0deg);
     -ms-transform:rotate(0deg);   
@@ -76,9 +124,11 @@
     -webkit-transform:rotate(0deg); 
     -o-transform:rotate(0deg); 
     transition:all .5s ease;
-    background-color:#ccc;
 }
-
+.slideicon label i{
+    font-size: 0.4rem;
+    color: #fff;
+}
 #header .navigation-slide > li{
     line-height: 1.8rem;
     border-bottom: 1px solid #d8d8d8;
@@ -123,6 +173,9 @@
 }
 
 /*首页*/
+#header.home{
+    padding: 0 0 9rem 0;
+}
 #header.home .logo .iconfont{
     font-size: 1.8rem;
 }
@@ -137,7 +190,7 @@
 }
 #header.home .search{
     top: 50%;
-    margin-top: -0.27rem;
+    margin-top: -0.4rem;
 }
 #header.home .search .iconfont{
     font-size: 0.65rem;

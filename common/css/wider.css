@@ -2,6 +2,10 @@
 	width: 100%;
 	font-size: 16px;
 }
+#container.hbg{
+	background: url("/img/banner_h.jpg") top center no-repeat;
+	background-size: 100% auto;
+}
 #header{
 	margin: 0 auto;
 	padding: 28px 5% 15px 5%;

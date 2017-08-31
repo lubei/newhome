@@ -69,7 +69,7 @@ a.blue{
 .navigation li.current a{
     color: #0090d3;
 }
-#header .navigation-slide{
+.navigation-slide{
     display: none;
 }
 .slideicon{
@@ -111,7 +111,7 @@ a.blue{
 
 /*首页*/
 #header.home{
-    padding: 0;
+    padding: 0 0 45% 0;
 }
 .home{
     position: relative;
@@ -123,7 +123,6 @@ a.blue{
 }
 #header.home .logo .iconfont{
     color: #fff;
-    -webkit-text-stroke-width: 0px;
 }
 #header.home .search{
     position: absolute;
