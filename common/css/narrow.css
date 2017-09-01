@@ -43,15 +43,16 @@
 
 /*左侧主菜单*/
 #menuMob{
-    position: relative;
+    position: fixed;
+    z-index: 10;
     left: 0;
     top: 0;
     width: 67%;
     height: 100%;
-    overflow: scroll;
     font-size: 0.6rem;
     color: #fff;
-
+    background-color: #6f7b8b;
+    overflow: scroll;
 }
 #menuMob li.current{
     background:#4bb1a5;
@@ -61,7 +62,21 @@
 }
 #menuMob .iconfont{
     color: #fff;
-    font-size: 0.3rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    vertical-align: middle;
+}
+#menuMob .arr{
+    display: none;
+    float: right;
+    padding-right: 0.5rem;
+    font-size: 0.25rem;
+}
+#menuMob .sec{
+    padding-left: 2.5rem;
+}
+#menuMob li.current .arr{
+    display: block;
 }
 #menuMob > ul{
     background-color: #5b697c;

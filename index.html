@@ -24,6 +24,11 @@
     <script src="common/js/dynamiclayout.js" type="text/javascript"></script>
     <script src="common/js/setsize.js" type="text/javascript"></script>
     <script src="common/swiper/swiper-3.4.2.jquery.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        body{
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,27 +39,28 @@
         <li class="bd">最新开课</li>
         <li class="bd">所有课程</li>
         <ul>
-            <li class="bd hover current"><a href=""><i class="iconfont"></i>IT服务管理<i class="iconfont"></i></a></li>
-            <li class="bd hover"><a href=""><i class="iconfont"></i>IT治理规划<i class="iconfont"></i></a></li>
-            <li class="bd hover"><a href=""><i class="iconfont"></i>项目管理<i class="iconfont"></i></a></li>
-            <li class="bd hover"><a href=""><i class="iconfont"></i>信息安全管理<i class="iconfont"></i></a></li>
-            <li class="bd hover"><a href=""><i class="iconfont"></i>管理能力<i class="iconfont"></i></a></li>
-            <li class="bd hover"><a href=""><i class="iconfont"></i>云与大数据<i class="iconfont"></i></a></li>
-            <li class="bd hover"><a href=""><i class="iconfont"></i>移动互联开发<i class="iconfont"></i></a></li>
-            <li><i class="iconfont"></i>虚拟化技术与软件开发应用</li>
-            <li class="hover sec"><a href="">虚拟化技术<i class="iconfont"></i></a></li>
-            <li class="bd hover sec"><a href="">软件开发<i class="iconfont"></i></a></li>
-            <li><i class="iconfont"></i>厂商系统管理与开发</li>
-            <li class="hover sec"><a href="">Microsoft<i class="iconfont"></i></a></li>
-            <li class="hover sec"><a href="">ORACLE<i class="iconfont"></i></a></li>
-            <li class="hover sec"><a href="">IBM<i class="iconfont"></i></a></li>
-            <li class="hover sec"><a href="">Linux<i class="iconfont"></i></a></li>
-            <li class="hover sec"><a href="">CISCO<i class="iconfont"></i></a></li>
-            <li class="bd hover sec"><a href="">工业设计<i class="iconfont"></i></a></li>
-            <li class="hover"><a href=""><i class="iconfont"></i>办公软件实战操作<i class="iconfont"></i></a></li>
+            <li class="bd hover current"><a href=""><i class="iconfont">&#xe63a;</i>IT服务管理<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont">&#xe63f;</i>IT治理规划<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont">&#xe642;</i>项目管理<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont">&#xe63c;</i>信息安全管理<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont">&#xe63d;</i>管理能力<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont">&#xe639;</i>云与大数据<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont">&#xe63e;</i>移动互联开发<i class="iconfont arr">&#xe679;</i></a></li>
+            <li><i class="iconfont">&#xe640;</i>虚拟化技术与软件开发应用</li>
+            <li class="hover sec"><a href="">虚拟化技术<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover sec"><a href="">软件开发<i class="iconfont arr">&#xe679;</i></a></li>
+            <li><i class="iconfont">&#xe641;</i>厂商系统管理与开发</li>
+            <li class="hover sec"><a href="">Microsoft<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="hover sec"><a href="">ORACLE<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="hover sec"><a href="">IBM<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="hover sec"><a href="">Linux<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="hover sec"><a href="">CISCO<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover sec"><a href="">工业设计<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="hover"><a href="">&#xe63b;<i class="iconfont"></i>办公软件实战操作<i class="iconfont arr">&#xe679;</i></a></li>
         </ul>
     </ul>
 </div>
+<div class="menu-mask"></div>
 <div id="container" class="hbg">
     <div id="header" class="home">
         <div class="nav-container">
@@ -64,7 +70,7 @@
                 <input type="checkbox" value="" id="checkSlide" />
                 <label for="checkSlide"><i class="iconfont">&#xe655;</i></label>
                 <ul class="navigation-slide">
-                    <li><a href="#">咨询服务</a><i class="iconfont"></i></li>
+                    <li><a href="#">咨询服务</a><i class="iconfont">&#xe638;</i></li>
                     <li>
                         <ul class="about">
                             <li><a href="#">关于甫崎</a><i class="iconfont">&#xe673;</i></li>
@@ -278,8 +284,20 @@
          var nav = $('.navigation-slide');
          var _this = $(this);
          nav.slideToggle(300);
-     })
-
+     });
+    function showMenu() {
+        var screenWidth = document.body.offsetWidth;
+        //$('.menu-wrap').animate({ left: "0" });
+        $('body').css('position', 'relative');
+        $('body').animate({ left: "8rem" }, function () { $('body').css({ 'position': 'fixed', 'width': screenWidth }); });
+        $('.menu-mask').show().animate({ left: "8rem" });
+     }
+    function hideMenu() {
+        $('.menu-wrap').animate({ left: "-8rem" });
+        $('body').css('position', 'relative');
+        $('body').animate({ left: "0rem" });
+        $('.menu-mask').hide().animate({ left: "0rem" });
+    };
 </script>
 </body>
 </html>
