@@ -13,10 +13,17 @@
 }
 #header{
 	margin: 0 auto;
+	padding: 28px 5% 15px 5%;
 	font-size: 18px;
 }
-#header .navigation{
-	display: none;
+.navigation li{
+	float: left;
+	padding: 0 10px;
+	line-height: 84px;
+}
+
+#header .logo{
+	margin-right: 40px;
 }
 #header .navigation-slide{
 	display: none;
@@ -42,48 +49,23 @@
 #header .navigation-slide .about > li{
 	line-height: 1.4rem;
 }
-#header .menu{
-	display: block;
-	float: left;
-	margin-right: 0.5rem;
-	width: 2.45rem;
-	height: 2.67rem;
-	background-color: #6f7b8b;
-}
-#header .logo{
-	float: inherit;
-	display: table-cell;
-	vertical-align: middle;
-	width: 5rem;
-	height: 2.67rem;
-}
-#header .logo > img{
-	width: 100%;
-	vertical-align: middle;
-}
 .title-right{
 	font-size: 18px;
 }
 
 /*首页*/
+#header.home .logo{
+	line-height: 84px;
+}
 #header.home .logo .iconfont{
-    font-size: 1.8rem;
+	font-size: 54px;
 }
-#header.home .menu{
-    background: transparent;
-    text-align: center;
-    line-height: 2.67rem;
-}
-#header.home .menu .iconfont{
-    color: #fff;
-    font-size: 0.8rem;
+#header.home .search .iconfont{
+	font-size: 22px;
 }
 #header.home .search{
     top: 50%;
-    margin-top: -0.27rem;
-}
-#header.home .search .iconfont{
-    font-size: 0.65rem;
+    margin-top: -12px;
 }
 .recommandWrapper > h1{
 	margin-bottom: 0.45rem;
@@ -98,15 +80,10 @@
 .titleTab > li:last-child a{
 	font-size: 18px;
 }
-
-.hotWrapper .itemList .name{
+.seriousWrapper > li > p{
 	font-size: 18px;
-	line-height: 24px;
-	padding-top: 0;
 }
-.hotWrapper .itemList .time{
-	font-size: 12px;
-}
+
 
 /*关于甫崎*/
 .secondaryContent h2{

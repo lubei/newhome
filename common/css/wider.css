@@ -33,11 +33,7 @@
 #header.home .search .iconfont{
 	font-size: 22px;
 }
-.home .nav-container{
-	width: 90%;
-    left: 5%;
-    top: 28px;
-}
+
 .recommandWrapper .itemList .cont .s{
 	font-size: 20px;
 }
@@ -48,7 +44,6 @@
 .titleTab > li:last-child a{
 	font-size: 18px;
 }
-
 
 /*关于甫崎*/
 .secondaryContent p{

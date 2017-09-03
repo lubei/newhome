@@ -39,24 +39,24 @@
         <li class="bd">最新开课</li>
         <li class="bd">所有课程</li>
         <ul>
-            <li class="bd hover current"><a href=""><i class="iconfont">&#xe63a;</i>IT服务管理<i class="iconfont arr">&#xe679;</i></a></li>
-            <li class="bd hover"><a href=""><i class="iconfont">&#xe63f;</i>IT治理规划<i class="iconfont arr">&#xe679;</i></a></li>
-            <li class="bd hover"><a href=""><i class="iconfont">&#xe642;</i>项目管理<i class="iconfont arr">&#xe679;</i></a></li>
-            <li class="bd hover"><a href=""><i class="iconfont">&#xe63c;</i>信息安全管理<i class="iconfont arr">&#xe679;</i></a></li>
-            <li class="bd hover"><a href=""><i class="iconfont">&#xe63d;</i>管理能力<i class="iconfont arr">&#xe679;</i></a></li>
-            <li class="bd hover"><a href=""><i class="iconfont">&#xe639;</i>云与大数据<i class="iconfont arr">&#xe679;</i></a></li>
-            <li class="bd hover"><a href=""><i class="iconfont">&#xe63e;</i>移动互联开发<i class="iconfont arr">&#xe679;</i></a></li>
-            <li><i class="iconfont">&#xe640;</i>虚拟化技术与软件开发应用</li>
+            <li class="bd hover current"><a href=""><i class="iconfont">&#xe65f;</i>IT服务管理<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont">&#xe644;</i>IT治理规划<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont">&#xe661;</i>项目管理<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont">&#xe646;</i>信息安全管理<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont">&#xe647;</i>管理能力<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont">&#xe645;</i>云与大数据<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="bd hover"><a href=""><i class="iconfont">&#xe65d;</i>移动互联开发<i class="iconfont arr">&#xe679;</i></a></li>
+            <li><i class="iconfont">&#xe660;</i>虚拟化技术与软件开发应用</li>
             <li class="hover sec"><a href="">虚拟化技术<i class="iconfont arr">&#xe679;</i></a></li>
             <li class="bd hover sec"><a href="">软件开发<i class="iconfont arr">&#xe679;</i></a></li>
-            <li><i class="iconfont">&#xe641;</i>厂商系统管理与开发</li>
+            <li><i class="iconfont">&#xe65e;</i>厂商系统管理与开发</li>
             <li class="hover sec"><a href="">Microsoft<i class="iconfont arr">&#xe679;</i></a></li>
             <li class="hover sec"><a href="">ORACLE<i class="iconfont arr">&#xe679;</i></a></li>
             <li class="hover sec"><a href="">IBM<i class="iconfont arr">&#xe679;</i></a></li>
             <li class="hover sec"><a href="">Linux<i class="iconfont arr">&#xe679;</i></a></li>
             <li class="hover sec"><a href="">CISCO<i class="iconfont arr">&#xe679;</i></a></li>
             <li class="bd hover sec"><a href="">工业设计<i class="iconfont arr">&#xe679;</i></a></li>
-            <li class="hover"><a href="">&#xe63b;<i class="iconfont"></i>办公软件实战操作<i class="iconfont arr">&#xe679;</i></a></li>
+            <li class="hover"><a href=""><i class="iconfont">&#xe648;</i>办公软件实战操作<i class="iconfont arr">&#xe679;</i></a></li>
         </ul>
     </ul>
 </div>
@@ -144,8 +144,26 @@
         <ul class="itemList">
             <li class="bg-texture-1">
                 <div class="cont">
-                    <i class="iconfont"></i>
-                    <div class="">
+                    <i class="iconfont">&#xe626;</i>
+                    <div class="corse">
+                        <h1>IT服务管理管理管理管理管理管理管理</h1>
+                        <p><i class="iconfont">&#xe643;</i>开课时间：3月1日-3月12日</p>
+                    </div>
+                </div>
+            </li>
+            <li class="bg-texture-2">
+                <div class="cont">
+                    <i class="iconfont">&#xe626;</i>
+                    <div class="corse">
+                        <h1>IT服务管理管理</h1>
+                        <p><i class="iconfont">&#xe643;</i>开课时间：3月1日-3月12日</p>
+                    </div>
+                </div>
+            </li>
+            <li class="bg-texture-3">
+                <div class="cont">
+                    <i class="iconfont">&#xe626;</i>
+                    <div class="corse">
                         <h1>IT服务管理管理管理管理管理管理管理</h1>
                         <p><i class="iconfont">&#xe643;</i>开课时间：3月1日-3月12日</p>
                     </div>
@@ -285,19 +303,25 @@
          var _this = $(this);
          nav.slideToggle(300);
      });
+     $('.menu').click(function () {
+         showMenu();
+     });
+    $('.menu-mask').click(function () {
+        hideMenu();
+    });
     function showMenu() {
         var screenWidth = document.body.offsetWidth;
-        //$('.menu-wrap').animate({ left: "0" });
+        $('#menuMob').animate({ left: "0" });
         $('body').css('position', 'relative');
-        $('body').animate({ left: "8rem" }, function () { $('body').css({ 'position': 'fixed', 'width': screenWidth }); });
-        $('.menu-mask').show().animate({ left: "8rem" });
+        $('body').animate({ left: "10.7rem" }, function () { $('body').css({ 'position': 'fixed', 'width': screenWidth }); });
+        $('.menu-mask').show().animate({ left: "10.7rem" });
      }
     function hideMenu() {
-        $('.menu-wrap').animate({ left: "-8rem" });
+        $('#menuMob').animate({ left: "-10.7rem" });
         $('body').css('position', 'relative');
         $('body').animate({ left: "0rem" });
         $('.menu-mask').hide().animate({ left: "0rem" });
-    };
+    }
 </script>
 </body>
 </html>

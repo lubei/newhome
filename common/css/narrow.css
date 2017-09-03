@@ -45,9 +45,9 @@
 #menuMob{
     position: fixed;
     z-index: 10;
-    left: 0;
+    left: -10.7rem;
     top: 0;
-    width: 67%;
+    width: 10.7rem;
     height: 100%;
     font-size: 0.6rem;
     color: #fff;
@@ -63,6 +63,7 @@
 #menuMob .iconfont{
     color: #fff;
     line-height: 1.6rem;
+    margin-right: 0.3rem;
     vertical-align: middle;
 }
 #menuMob .arr{
@@ -72,7 +73,7 @@
     font-size: 0.25rem;
 }
 #menuMob .sec{
-    padding-left: 2.5rem;
+    padding-left: 2.18rem;
 }
 #menuMob li.current .arr{
     display: block;
@@ -187,6 +188,9 @@
 }
 
 /*首页*/
+.home .nav-container{
+    top: 0;
+}
 #header.home{
     padding: 0 0 9rem 0;
 }
@@ -244,7 +248,9 @@
 .seriousWrapper > li > p{
     float: left;
     line-height: 1.8rem;
+    font-size: 0.64rem;
 }
+
 .itemList > li{
     float: none;
     width: 100%;
@@ -264,14 +270,34 @@
 .recommandWrapper >h1, .newsWrapper .overflow-hid{
     margin-bottom: 0.8rem;
 }
+.recommandWrapper .itemList .cont .corse{
+    float: left;
+    width: 10rem;
+    height: 3.1rem;
+    padding-top: 0;
+}
+.recommandWrapper .itemList .cont .corse p{
+    font-size: 0.35rem;
+}
+.recommandWrapper .itemList .cont .corse .iconfont{
+    font-size: 0.1rem;
+    margin-right: 0.2rem;
+}
+.recommandWrapper .itemList .cont > .iconfont{
+    float: left;
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+}
 .recommandWrapper .itemList .cont{
-    display: table-cell;
     position: relative;
     box-sizing: border-box;
     height:4.8rem;
-    padding-top: 0;
+    padding-top: 1rem;
     padding-left: 1rem;
-    vertical-align: middle;
+}
+.recommandWrapper .itemList .cont .corse h1{
+    font-size: 0.8rem;
+    line-height: 1.1rem;
 }
 .recommandWrapper .itemList .cont .s{
     font-size: 0.46rem;
@@ -298,6 +324,7 @@
     line-height: 0.9rem;
     width: 8rem;
     padding-top: 0;
+    padding-left: 0;
 }
 .hotWrapper .itemList .time{
     bottom: 1.5rem;
@@ -307,6 +334,7 @@
 }
 .hotWrapper .itemList .hot{
     bottom: 1.5rem;
+    font-size: 0.7rem;
 }
 .hotWrapper .itemList .new{
     font-size: 1.2rem;
