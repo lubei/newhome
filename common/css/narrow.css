@@ -340,6 +340,9 @@
     font-size: 1.2rem;
     bottom: 1.1rem
 }
+.hotWrapper .itemList .mask .desc{
+    display: none;
+}
 .newsWrapper .swiper-container{
     overflow: scroll;
 }

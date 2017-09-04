@@ -286,6 +286,9 @@ a.blue{
 .titleTab > li.current a{
     color: #0090d3;
 }
+.hotWrapper .itemList .cont{
+    overflow: hidden;
+}
 .hotWrapper .itemList > li{
     background-color: #fff;
     margin-top: 35px;
@@ -294,6 +297,8 @@ a.blue{
     box-sizing: border-box;
 }
 .hotWrapper .itemList .f1 .thumbnail{
+    position: relative;
+    z-index: 2;
     display: table-cell;
     width: 1.6rem;
     height: 1.6rem;
@@ -305,8 +310,40 @@ a.blue{
 .hotWrapper .itemList{
     overflow: inherit;
 }
-.hotWrapper .itemList .f2{
-    display: none;
+.hotWrapper .itemList .mask{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 0.22rem;
+    line-height: 0.32rem;
+    box-sizing: border-box;
+    transition:all .5s ease;
+}
+.hotWrapper .itemList > li:hover .thumbnail{
+    color: #fff;
+}
+.hotWrapper .itemList > li:hover .time{
+     opacity: 0;
+ }
+.hotWrapper .itemList > li .f1 .iconfont{
+    transition:all .5s ease;
+}
+.hotWrapper .itemList > li:hover .f1 .new, .hotWrapper .itemList > li:hover .f1 .hot{
+    right: -1rem;
+}
+.hotWrapper .itemList > li:hover .mask{
+    top: 0;
+    background:-webkit-gradient(linear, 0 0, 100% bottom, from(#38ccd2), to(#2da4db));
+}
+.hotWrapper .itemList .mask .desc{
+    position: absolute;
+    left: 0.45rem;
+    width: 84%;
+    bottom: 0.45rem;
 }
 .hotWrapper .itemList .name{
     font-size: 0.29rem;
