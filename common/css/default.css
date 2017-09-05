@@ -8,7 +8,10 @@ a{
     clear: both;
 }
 .pd-1{
-    padding: 28px 8%;
+    width: 80%;
+    max-width: 1024px;
+    padding: 28px 0;
+    margin: 0 auto;
 }
 .pd-2{
     padding: 28px 0;
@@ -56,6 +59,10 @@ a.blue{
 }
 
 /*header*/
+#container.hbg{
+    background: url("/img/banner_h.jpg") top center no-repeat;
+    background-size: 100% auto;
+}
 #menuMob{
     position: fixed;
     z-index: 10;
@@ -220,11 +227,12 @@ a.blue{
 .recommandWrapper .itemList .cont .corse{
     position: relative;
     padding-top: 0.3rem;
+    padding-right: 0.3rem;
     height: 2rem;
 }
 .recommandWrapper .itemList .cont .corse h1{
-    font-size: 0.36rem;
-    line-height: 0.55rem;
+    font-size: 0.32rem;
+    line-height: 0.5rem;
 }
 .recommandWrapper .itemList .cont .corse p{
     position: absolute;
@@ -377,7 +385,8 @@ a.blue{
 }
 .newsWrapper{
     position: relative;
-    width: 84%;
+    width: 80%;
+    max-width: 1024px;
     height:100%;
     box-sizing: border-box;
     margin: 0 auto;

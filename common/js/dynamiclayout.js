@@ -25,12 +25,19 @@ function dynamicLayout(){
           swiperNews.attachEvents()
       }
   }
-  if (browserWidth > 950){
+  if ((browserWidth > 950) && (browserWidth <= 1440)) {
       changeLayout("wider");
       if(typeof(swiperNews)!='undefined'){
           swiperNews.onResize();
           swiperNews.attachEvents()
       }
+  }
+  if (browserWidth > 1440) {
+        changeLayout("larger");
+        if(typeof(swiperNews)!='undefined'){
+            swiperNews.onResize();
+            swiperNews.attachEvents()
+        }
   }
 }
 

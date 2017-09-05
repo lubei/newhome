@@ -1,0 +1,148 @@
+#container{
+	width: 100%;
+	font-size: 16px;
+}
+#header{
+	margin: 0 auto;
+	padding: 28px 5% 15px 5%;
+	font-size: 18px;
+}
+.navigation li{
+	float: left;
+	padding: 0 20px;
+	line-height: 84px;
+}
+#header .logo{
+	margin-right: 40px;
+}
+.title-right{
+	font-size: 18px;
+}
+
+/*首页*/
+#header.home .logo{
+	line-height: 84px;
+}
+#header.home .logo .iconfont{
+	font-size: 54px;
+}
+#header.home .search .iconfont{
+	font-size: 22px;
+}
+.seriousWrapper > li{
+	height: 220px;
+}
+.seriousWrapper > li > p{
+	font-size: 18px;
+}
+.seriousWrapper > li > i{
+	width: 100px;
+	height: 130px;
+}
+.recommandWrapper .itemList .cont{
+	padding-top: 30px;
+	padding-left: 30px;
+}
+.recommandWrapper .itemList .cont .corse{
+	padding-top: 20px;
+	padding-right: 20px;
+	height: 180px;
+}
+.recommandWrapper .itemList .cont .corse h1{
+	font-size: 30px;
+	line-height: 46px;
+}
+.recommandWrapper .itemList .cont .corse p{
+	font-size: 15px;
+}
+.recommandWrapper .itemList .cont .corse .iconfont{
+	font-size: 20px;
+}
+.recommandWrapper .itemList .cont .iconfont{
+	font-size: 52px;
+}
+.recommandWrapper .itemList .cont .s{
+	font-size: 20px;
+}
+.recommandWrapper .itemList .cont .name{
+	font-size: 34px;
+	line-height: 38px;
+}
+.hotWrapper .itemList .mask{
+	font-size: 18px;
+	line-height: 28px;
+}
+.hotWrapper .itemList .mask .desc{
+	left: 35px;
+	bottom: 35px;
+}
+.titleTab > li:last-child a{
+	font-size: 18px;
+}
+.hotWrapper .itemList .f1 .thumbnail{
+	width: 120px;
+	height: 120px;
+	font-size: 58px;
+}
+.hotWrapper .itemList .name{
+	padding-left: 35px;
+	font-size: 30px;
+}
+.hotWrapper .itemList .time{
+	padding-left: 35px;
+	font-size: 16px;
+	left: 0;
+	bottom: 35px;
+}
+.hotWrapper .itemList .new{
+	font-size: 36px;
+	bottom: 23px;
+}
+.hotWrapper .itemList .hot{
+	font-size: 26px;
+	bottom: 30px;
+}
+
+
+
+/*关于甫崎*/
+.secondaryContent p{
+	margin-bottom: 30px;
+}
+.secondaryContent .missions .right > img{
+	width: 100%;
+}
+.secondaryContent .characters ul > li{
+	width: 33.333%;
+	height: 250px;
+	margin-bottom: 50px;
+}
+.secondaryContent .characters p{
+	width: 85%;
+	margin: 0 auto;
+}
+.secondaryContent .features ul > li{
+	width: 22%;
+}
+
+
+/*培训合作*/
+
+
+/*底部通用*/
+#footer{
+	overflow: hidden;
+	padding: 40px 5% 40px 8%;
+}
+.copyright{
+	float: right;
+	text-align: right;
+}
+.copyright > ul{
+	text-align: right;
+}
+.hotline{
+	float: left;
+	border-bottom: 0;
+}
+
