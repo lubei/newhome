@@ -283,7 +283,7 @@
     </div>
     <div class="customersWrapper pd-1 swiper-container">
         <h1 class="title-1">我们的客户</h1>
-        <ul class="itemList swiper-wrapper">
+        <ul class="swiper-wrapper">
             <li class="swiper-slide">
                 <img src="img/logo/chinatelecom.jpg" />
                 <img src="img/logo/chinaunicom.jpg" />
@@ -336,11 +336,16 @@
 </div>
 <script>
     var swiperNews = new Swiper('.newsWrapper .swiper-container', {
-        slidesPerView: 2,
+        
         paginationClickable: true,
         spaceBetween: 30,
         prevButton:'.swiper-button-prev-news',
         nextButton:'.swiper-button-next-news'
+    });
+    var swiperCustomers = new Swiper('.customersWrapper', {
+        // autoplay : 3000,
+        // loop: true
+        slidesPerView: 1,
     });
 
      $('#checkSlide').change(function(){

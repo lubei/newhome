@@ -362,6 +362,18 @@
 .swiper-button-prev-news i, .swiper-button-next-news i{
     display: none;
 }
+.customersWrapper ul >li > img{
+    width: 35%;
+    padding: 7%;
+}
+
+
+
+
+
+
+
+
 
 /*联系我们*/
 .secondaryContent-1{

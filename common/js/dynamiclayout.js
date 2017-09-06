@@ -15,7 +15,7 @@ function dynamicLayout(){
       //swiperNews.updateContainerSize();
       if(typeof(swiperNews)!='undefined'){
           swiperNews.detachEvents();
-          $('.newsList li').css({'width':'12rem','marginRight':'1rem'});
+          $('.newsList li').css({'width':'11rem','marginRight':'1rem'});
       }
   }
   if ((browserWidth >= 750) && (browserWidth <= 950)){

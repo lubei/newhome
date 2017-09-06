@@ -440,6 +440,19 @@ a.blue{
 .swiper-button-prev-news i, .swiper-button-next-news i{
     font-size: 24px;
 }
+.customersWrapper ul{
+
+    padding-top: 20px;
+}
+.customersWrapper ul >li{
+    width: 100%;
+
+}
+.customersWrapper ul >li > img{
+    width: 15%;
+    padding: 4.5%;
+}
+
 
 /*联系我们*/
 .secondaryContent-1{
