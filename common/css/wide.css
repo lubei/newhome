@@ -50,16 +50,11 @@
 }
 
 /*首页*/
-#header.home .logo{
-	line-height: 84px;
-}
-#header.home .logo .iconfont{
-	font-size: 54px;
-}
-#header.home .search .iconfont{
+
+#header .search .iconfont{
 	font-size: 22px;
 }
-#header.home .search{
+#header .search{
     top: 50%;
     margin-top: -12px;
 }

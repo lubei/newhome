@@ -20,13 +20,8 @@
 }
 
 /*首页*/
-#header.home .logo{
-	line-height: 84px;
-}
-#header.home .logo .iconfont{
-	font-size: 54px;
-}
-#header.home .search .iconfont{
+
+#header .search .iconfont{
 	font-size: 22px;
 }
 

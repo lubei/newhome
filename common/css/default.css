@@ -80,6 +80,7 @@ a.blue{
 }
 #header .navigation{
     overflow: hidden;
+    position: relative;
 }
 .navigation li.current a{
     color: #0090d3;
@@ -129,7 +130,10 @@ a.blue{
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.4);
-    display: none;z-index: 999;
+    box-shadow: 0 0 1rem rgba(0,0,0, .4);
+    display: none;
+    z-index: 999;
+
 }
 
 /*首页*/
@@ -149,10 +153,17 @@ a.blue{
     left: 5%;
     top: 28px;
 }
+#header .logo{
+    line-height: 80px;
+}
+#header .logo .iconfont{
+    font-size: 54px;
+    color: #1b3a71;
+}
 #header.home .logo .iconfont{
     color: #fff;
 }
-#header.home .search{
+#header .search{
     position: absolute;
     right: 5%;
     top: 28px;
@@ -214,7 +225,7 @@ a.blue{
 .recommandWrapper{
 
 }
-.recommandWrapper >h1, .newsWrapper .overflow-hid{
+.recommandWrapper .pd-1 h1, .customersWrapper > h1, .newsWrapper .overflow-hid{
     margin-bottom: 30px;
  }
 .recommandWrapper .itemList .cont{
@@ -440,17 +451,19 @@ a.blue{
 .swiper-button-prev-news i, .swiper-button-next-news i{
     font-size: 24px;
 }
-.customersWrapper ul{
-
-    padding-top: 20px;
+.customersWrapper{
+    width: 80%;
+    max-width: 1024px;
+    padding: 28px 0;
+    margin: 0 auto;
 }
-.customersWrapper ul >li{
-    width: 100%;
-
+.customersWrapper .itemList2 > li img{
+    width: 20%;
+    margin-right: 6%;
+    margin-bottom: 7%;
 }
-.customersWrapper ul >li > img{
-    width: 15%;
-    padding: 4.5%;
+.customersWrapper .itemList2 > li img:nth-child(4n){
+    margin-right: 0;
 }
 
 

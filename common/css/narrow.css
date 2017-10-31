@@ -268,7 +268,7 @@
 .titleTab > li:last-child{
     line-height: 1.2rem;
 }
-.recommandWrapper >h1, .newsWrapper .overflow-hid{
+.recommandWrapper .pd-1 h1, .customersWrapper > h1, .newsWrapper .overflow-hid{
     margin-bottom: 0.8rem;
 }
 .recommandWrapper .itemList .cont .corse{
@@ -362,18 +362,18 @@
 .swiper-button-prev-news i, .swiper-button-next-news i{
     display: none;
 }
-.customersWrapper ul >li > img{
-    width: 35%;
-    padding: 7%;
+.customersWrapper{
+    padding-top: 0;
 }
-
-
-
-
-
-
-
-
+.customersWrapper .itemList2 > li img{
+    width: 5rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+.customersWrapper .itemList2 > li img:nth-child(2n){
+    margin-right: 0;
+}
 
 /*联系我们*/
 .secondaryContent-1{
