@@ -47,6 +47,32 @@
     position: fixed;
     z-index: 10;
     left: -10.7rem;
+    /*transform: translateX(-10.7rem);*/
+    /*-webkit-transform:translateX(-10.7rem);*/
+    top: 0;
+    width: 10.7rem;
+    height: 100%;
+    font-size: 0.6rem;
+    color: #fff;
+    background-color: #6f7b8b;
+    overflow: scroll;
+}
+#menuMob.menuMobMove{
+    left:0;
+    transition:all .5s ease;
+}
+
+.allMove{
+    left:10.7rem;
+    position: fixed;
+    transition:all .5s ease;
+}
+#menuMob.show{
+    position: fixed;
+    z-index: 10;
+    left: -10.7rem;
+    /*transform: translateX(-10.7rem);*/
+    /*-webkit-transform:translateX(-10.7rem);*/
     top: 0;
     width: 10.7rem;
     height: 100%;
@@ -101,6 +127,10 @@
 #menuMob .bd{
     border-bottom: 1px solid #8b94a1;
 }
+#header{
+    height: 2.67rem;
+    padding: 0;
+}
 #header .navigation{
     display: none;
 }
@@ -113,26 +143,31 @@
     -moz-transform:rotate(180deg);   
     -webkit-transform:rotate(180deg); 
     -o-transform:rotate(180deg);
-    left: 9rem;
-    top: 1.15rem;
+    left: 8.8rem;
+    top: 0.9rem;
 }
 
 .slideicon .navigation-slide{
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     left:50%;
     margin-left: -45%;
     top: 3.5rem;
     width: 90%;
     background-color: #eee;
+    box-shadow: 0 0 0.3rem rgba(0,0,0,.25);
 }
 .slideicon input[type=checkbox]{
     visibility: hidden;
 }
 .slideicon label{
     position: absolute;
-    left: 9rem;
-    top: 1.15rem;
+    left: 8.8rem;
+    top: 1.1rem;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
     display: inline-block;
     transform:rotate(0deg);
     -ms-transform:rotate(0deg);   
@@ -141,9 +176,14 @@
     -o-transform:rotate(0deg); 
     transition:all .5s ease;
 }
+.home .slideicon label{
+    top: 0.9rem;
+}
+.home .slideicon label i{
+    color: #fff;
+}
 .slideicon label i{
     font-size: 0.4rem;
-    color: #fff;
 }
 #header .navigation-slide > li{
     line-height: 1.8rem;
@@ -158,6 +198,7 @@
     color: #1b1b1b;
     display: inline-block;
     float: left;
+    font-size: 0.55rem;
 }
 #header .navigation-slide > li i{
     display: inline-block;
@@ -174,6 +215,8 @@
     margin-right: 0.5rem;
     width: 2.45rem;
     height: 2.67rem;
+    line-height: 2.67rem;
+    text-align: center;
     background-color: #6f7b8b;
 }
 #header .logo{
@@ -181,7 +224,10 @@
     display: table-cell;
     vertical-align: middle;
     width: 6rem;
-    height: 2.67rem;
+    line-height: 3rem;
+}
+#header.home .logo{
+    line-height: 2.5rem;
 }
 #header .logo > img{
     width: 100%;
@@ -189,8 +235,13 @@
 }
 
 /*首页*/
+.nav-container{
+    height: 2.67rem;
+}
 .home .nav-container{
     top: 0;
+    left: 0;
+    width: 100%;
 }
 #header.home{
     padding: 0 0 9rem 0;
@@ -203,7 +254,7 @@
     text-align: center;
     line-height: 2.67rem;
 }
-#header.home .menu .iconfont{
+#header .menu .iconfont{
     color: #fff;
     font-size: 0.8rem;
 }
@@ -211,8 +262,15 @@
     top: 50%;
     margin-top: -0.4rem;
 }
-#header.home .search .iconfont{
+#header .search .iconfont{
     font-size: 0.65rem;
+}
+#header .logo .iconfont{
+    font-size: 1.8rem;
+}
+#header .search{
+    top: 1rem;
+    right: 1rem;
 }
 .searchpanel > input{
     font-size: 0.64rem;
@@ -230,11 +288,12 @@
     height: auto;
     overflow: hidden;
     margin-bottom: 1.8rem;
+    text-align: left;
 }
 .seriousWrapper > li:nth-child(2n){
     width: 45%;
 }
-.seriousWrapper > li > i{
+.seriousWrapper > li i{
     display: inline-block;
     float: left;
     width: 1.8rem;
@@ -243,10 +302,10 @@
     vertical-align: middle;
     text-align: center;
 }
-.seriousWrapper > li > i>img{
+.seriousWrapper > li i>img{
     width: 100%;
 }
-.seriousWrapper > li > p{
+.seriousWrapper > li p{
     float: left;
     line-height: 1.8rem;
     font-size: 0.64rem;
@@ -278,10 +337,10 @@
     padding-top: 0;
 }
 .recommandWrapper .itemList .cont .corse p{
-    font-size: 0.35rem;
+    font-size: 0.45rem;
 }
 .recommandWrapper .itemList .cont .corse .iconfont{
-    font-size: 0.1rem;
+    font-size: 0.5rem;
     margin-right: 0.2rem;
 }
 .recommandWrapper .itemList .cont > .iconfont{
@@ -317,6 +376,12 @@
     height: 4.5rem;
     font-size: 2rem;
 }
+.hotWrapper .itemList > li:hover .thumbnail{
+    color: #0090d3;
+}
+.hotWrapper .itemList > li:hover .time{
+    opacity: 1;
+}
 .hotWrapper .itemList .name{
     position: absolute;
     left: 4.5rem;
@@ -341,8 +406,18 @@
     font-size: 1.2rem;
     bottom: 1.1rem
 }
+.hotWrapper .itemList .mask{
+    display: none;
+    transition: none;
+}
 .hotWrapper .itemList .mask .desc{
     display: none;
+}
+.hotWrapper .itemList > li .f1 .iconfont{
+    transition:none;
+}
+.hotWrapper .itemList > li:hover .f1 .new, .hotWrapper .itemList > li:hover .f1 .hot{
+    right: 6%;
 }
 .newsWrapper .swiper-container{
     overflow: scroll;
@@ -363,7 +438,8 @@
     display: none;
 }
 .customersWrapper{
-    padding-top: 0;
+    padding-top: 1rem;
+    width: 80%;
 }
 .customersWrapper .itemList2 > li img{
     width: 5rem;
@@ -397,8 +473,23 @@
 
 
 /*关于甫崎*/
+.banner{
+    text-align: center;
+    height: 10.67rem;
+    overflow: hidden;
+}
+.banner > img{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: -50%;
+}
+.banner > .dot{
+    z-index: 2;
+}
 .banner > label{
     font-size: 0.85rem;
+    z-index: 3;
 }
 .secondaryContent h1{
     padding: 0.43rem 0;
@@ -413,6 +504,9 @@
 }
 .secondaryContent p{
     line-height: 1rem;
+}
+.secondaryContent .missions .left{
+    padding-left: auto;
 }
 .secondaryContent .missions .left, .secondaryContent .missions .right{
     display: block;
@@ -556,6 +650,144 @@
 .secondaryContent .consult-container > h2{
     margin-bottom: 2rem;
 }
+
+/*所有课程*/
+#courseContainer{
+    padding: 0 8%;
+}
+
+#courseContainer .itemList .f1 .thumbnail{
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 2rem;
+}
+#courseContainer .itemList .name{
+    position: absolute;
+    left: 4.5rem;
+    top: 1.1rem;
+    font-size: 0.64rem;
+    line-height: 0.9rem;
+    width: 8rem;
+    padding-top: 0;
+    padding-left: 0;
+}
+#courseContainer .itemList .time{
+    bottom: 1.5rem;
+    left: 4.5rem;
+    font-size: 0.512rem;
+    width: 8rem;
+}
+#courseContainer  .itemList .hot{
+    bottom: 1.5rem;
+    font-size: 0.7rem;
+}
+#courseContainer .itemList .new{
+    font-size: 1.2rem;
+    bottom: 1.1rem
+}
+
+
+
+
+/*咨询服务内页*/
+.consultBanner{
+    width: 100%;
+    height: 4.7rem;
+    background: url("/img/consult_banner_01.png") center center no-repeat;
+    background-size: 100% 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+.consultBanner h1{
+    height: 4.7rem;
+    padding: 0;
+    font-size: 0.85rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+.consultBanner .iconfont{
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+}
+.consultdetail-wrapper .textarea{
+    padding: 1rem 0;
+    font-size: 0.55rem;
+}
+.consultdetail-wrapper .more{
+    font-size: 0.64rem;
+    margin-bottom: 1.6rem;
+}
+
+
+/*新闻首页*/
+.newshome-wrapper .top, .newshome-wrapper .main li{
+    padding: 1.5rem 0;
+}
+.newshome-wrapper .left, .newshome-wrapper .right{
+    float: none;
+}
+.newshome-wrapper .left{
+    width: 100%;
+    margin-right: 0;
+}
+.newshome-wrapper .left h1, .newshome-wrapper .main h1{
+    font-size: 0.768rem;
+    line-height: 1rem;
+    padding: 0;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+.newshome-wrapper .left h2, .newshome-wrapper .main h2{
+    font-size: 0.512rem;
+    margin-bottom: 1.2rem;
+}
+.newshome-wrapper .right{
+    width: 100%;
+}
+.newshome-wrapper .right img, .newshome-wrapper .main img{
+    width: 100%;
+}
+.newshome-wrapper .main ul{
+    border: none;
+}
+.newshome-wrapper .main li{
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    border-top:1px solid #dcdcdc;
+}
+.newshome-wrapper .main img, .newshome-wrapper .right img{
+    margin-bottom: 0.8rem;
+}
+
+
+
+/*新闻详情页*/
+.newBanner{
+    height: 10.67rem;
+    text-align: center;
+}
+.newBanner>img{
+    width: auto;
+    height: 10.67rem;
+    margin-top: auto;
+}
+.news-wrapper>h1{
+    font-size: 0.85rem;
+}
+.news-wrapper>h2{
+    font-size: 0.55rem;
+    padding-top: 1.6rem;
+}
+.news-wrapper .textarea{
+    padding: 1rem 0;
+    font-size: 0.55rem;
+}
+.news-wrapper .more{
+    font-size: 0.64rem;
+    margin-bottom: 1.6rem;
+}
+
 
 /*底部通用*/
 .hotline .iconfont{

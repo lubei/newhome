@@ -58,7 +58,41 @@ function addEvent( obj, type, fn ){
     obj[type+fn] = function(){ obj["e"+type+fn]( window.event ); } 
     obj.attachEvent( "on"+type, obj[type+fn] ); 
   } 
-} 
+}
+
+function showMenu() {
+    var screenWidth = document.body.offsetWidth;
+    $('#menuMob').animate({ left: "0" });
+    $('body').css('position', 'relative');
+    $('body').animate({ left: "10.7rem" }, function () { $('body').css({ 'position': 'fixed', 'width': screenWidth }); });
+    $('.menu-mask').show().animate({ left: "10.7rem" });
+    // $('.menu-mask').show();
+    // $('#menuMob').addClass('menuMobMove');
+    // $('body').addClass('allMove', function () { $('body').css({ 'position': 'fixed', 'width': screenWidth }); });
+
+}
+
+function hideMenu() {
+    $('#menuMob').animate({ left: "-10.7rem" });
+    $('body').css('position', 'relative');
+    $('body').animate({ left: "0rem" });
+    $('.menu-mask').hide().animate({ left: "0rem" });
+}
+
+$(function () {
+    $('#checkSlide').change(function(){
+        var nav = $('.navigation-slide');
+        var _this = $(this);
+        nav.slideToggle(300);
+    });
+    $('.menu').click(function () {
+        showMenu();
+    });
+    $('.menu-mask').click(function () {
+        hideMenu();
+    });
+
+})
 
 addEvent(window, 'load', dynamicLayout);
 addEvent(window, 'resize', dynamicLayout);

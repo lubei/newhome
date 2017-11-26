@@ -1,24 +1,3 @@
-#container{
-	width: 100%;
-	font-size: 16px;
-}
-#header{
-	margin: 0 auto;
-	padding: 28px 5% 15px 5%;
-	font-size: 18px;
-}
-.navigation li{
-	float: left;
-	padding: 0 20px;
-	line-height: 84px;
-}
-#header .logo{
-	margin-right: 40px;
-}
-.title-right{
-	font-size: 18px;
-}
-
 /*首页*/
 
 #header .search .iconfont{
@@ -27,10 +6,10 @@
 .seriousWrapper > li{
 	height: 220px;
 }
-.seriousWrapper > li > p{
-	font-size: 18px;
+.seriousWrapper > li p{
+	font-size: 26px;
 }
-.seriousWrapper > li > i{
+.seriousWrapper > li i{
 	width: 100px;
 	height: 130px;
 }
@@ -122,6 +101,17 @@
 
 
 /*培训合作*/
+
+/*所有课程*/
+#courseContainer .itemList > li{
+	width: 310px;
+	padding-bottom: 310px;
+}
+#courseContainer .itemList .time{
+	left: 0;
+}
+
+
 
 
 /*底部通用*/
