@@ -873,6 +873,31 @@ a.blue{
     margin-right: 3.5%;
 }
 
+/*课程详情页*/
+#courseDetailContainer{
+    flex: 1;
+    background-color: #fff;
+}
+.coursesBanner{
+    width: 100%;
+    background: url("/img/consult_banner_01.png") center center no-repeat;
+    background-size: 100% 100%;
+}
+.coursesBanner h1{
+    width: 80%;
+    max-width: 1024px;
+    padding: 1rem 0;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,.4);
+}
+.coursesBanner .iconfont{
+    font-size: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
 
 /*咨询服务*/
 .consult-wrapper .consult-container{
